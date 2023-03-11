@@ -1,0 +1,85 @@
+@import '_fonts', '_variables', '_functions';
+
+  .header {
+    width: 100%;
+    min-height:rem(146);
+    margin-top: rem(43);
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(22);
+    color: $title-color;
+    position: sticky;
+    top: 0;
+  
+    &__container {
+        @include main-container();
+        padding: rem(94) rem(134) rem(50) rem(55);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: rem(62);
+        text-align: center;
+        line-height: em(32, 16);
+
+    .logo {
+        flex:0 0 rem(148);
+        &__img {
+           min-width: 100%;
+        }
+    }
+    .menu {
+        flex:1 1 auto;
+        text-transform: uppercase;
+           
+        &__list {
+            display: flex;
+            justify-content: end;
+            column-gap: rem(10);
+            height: rem(32); 
+         
+        }
+        &__item {
+            border: 2px solid transparent;
+            border-radius: rem(15) rem(0);
+            padding: 0 15px;
+            transition: all 0.3s;
+            &:hover {
+                border-color: $btn-main-color;
+                .menu__link {
+                color: $btn-main-color;        
+                }
+            }     
+        }
+        &__link {
+            color: inherit;          
+        } 
+      }
+      .auth {
+        
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        
+        &__item{
+            min-width: rem(95);
+            height: rem(32);
+            border-radius: rem(15) rem(0);
+            border: 2px solid transparent;
+            background-color: $btn-color;
+            text-transform: capitalize;
+            transition: all 0.3s;
+            &:hover {
+                border-color: $decor-color;
+                background-color: #FFFFFF;
+                .auth__link {
+                color: $decor-color;        
+                }
+            }
+                 
+        }
+        &__link {      
+            color: #FFFFFF;
+        }
+     }
+    }
+  }

@@ -1,0 +1,22 @@
+@import '_fonts', '_variables', '_functions';
+@import '_reset';
+
+.page{
+    @extend %main-text-style;
+    font-weight: 500;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+     
+
+
+
+
+    .wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        @import 'header', 'main', 'footer';
+      }
+
+}
