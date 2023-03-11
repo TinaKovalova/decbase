@@ -1,4 +1,4 @@
-.main .services__title, .main .project__container .content__title {
+.main .about__container .content-about__title, .main .services__title, .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -11,7 +11,7 @@
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.main .services__title, .main .project__container .content__title {
+.main .about__container .content-about__title, .main .services__title, .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -30,19 +30,17 @@
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-.main .project {
+.main .project__container {
   width: 80.8510638298vw;
   padding: 0 0.625em;
   margin: 0 auto;
-}
-.main .project__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.625rem 5.3125rem 4.6875rem 3.5rem;
+  padding: 2.625rem 5.3125rem 4.6875rem 3.125rem;
   gap: 0.875rem;
   position: relative;
 }
@@ -151,6 +149,16 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.main .services__container::after {
+  content: "";
+  display: block;
+  width: 12.8723404255vw;
+  height: 13.5638297872vw;
+  background: url("../images/services/decor_service.svg") center/cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .main .services__container .service {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,4 +259,100 @@
   color: #37806B;
   background-color: #ffffff;
   border-color: #37806B;
+}
+.main .about__container {
+  width: 80.8510638298vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8.875rem 3.125rem;
+  gap: 7.5rem;
+}
+.main .about__container .view-about {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 41.8125rem;
+          flex: 0 1 41.8125rem;
+  min-height: 44.4375rem;
+  border-radius: 8.5625rem 0rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  border-style: solid;
+  background: url("../images/about/room-about.jpeg") center/cover;
+  position: relative;
+}
+.main .about__container .view-about::after {
+  content: "";
+  display: block;
+  width: 41.8125rem;
+  min-height: 44.4375rem;
+  border-radius: 8.5625rem 0rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  border-style: solid;
+  border-color: #B0855B;
+  position: absolute;
+  top: -2rem;
+  left: -2.1875rem;
+  z-index: -2;
+}
+.main .about__container .content-about {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 34.0625rem;
+          flex: 0 1 34.0625rem;
+  min-height: 36.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .about__container .content-about__subtitle {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #646464;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+.main .about__container .content-about__title {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 3rem;
+  line-height: 3.5625rem;
+  margin-top: 1.8125rem;
+}
+.main .about__container .content-about__text {
+  color: #646464;
+  line-height: 1.125rem;
+  margin-top: 1.875rem;
+  padding: 0.3125rem;
+  margin-top: 0.9375rem;
+}
+.main .about__container .content-about__btn {
+  width: 8.75rem;
+  min-height: 2.625rem;
+  text-align: center;
+  line-height: 2.1875em;
+  font-weight: 700;
+  margin-top: 1.0625rem;
+  border-radius: 1.25rem 0rem;
+  border-width: 0.3125rem;
+  border-color: transparent;
+  border-style: solid;
+  text-transform: uppercase;
+  background-color: #37806B;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.main .about__container .content-about__btn:hover {
+  border-color: #37806B;
+  color: #37806B;
+  background-color: #ffffff;
 }

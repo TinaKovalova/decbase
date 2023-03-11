@@ -3,11 +3,12 @@
   width: 100%;
   flex: 1 1 auto;
   .project {
-    @include main-container();
+   
     &__container {
+      @include main-container();
       display: flex;
       align-items: center;
-      padding: rem(42) rem(85) rem(75) rem(56);
+      padding: rem(42) rem(85) rem(75) rem(50);
       gap: rem(14);
       position: relative;
       &::before {
@@ -97,11 +98,22 @@
       min-height: rem(920);
       display: flex;
       flex-direction: column;
+      &::after{
+        content: "";
+    display: block;
+    width: vw(242);
+    height: vw(255);
+    background: url("../images/services/decor_service.svg") center/cover;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    }
 
       .service {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        
         &__item {
           width: rem(470);
           min-height: rem(165);
@@ -183,6 +195,88 @@
         color: $btn-main-color;
         background-color: #ffffff;
         border-color: $btn-main-color;
+      }
+    }
+  }
+  
+  .about {
+    &__container {
+        @include main-container();
+        display: flex;
+      
+        justify-content: center;
+        padding: rem(142) rem(50);
+        gap: rem(120);
+
+      .view-about {
+        $view-width: 669;
+        $view-height: 711;
+        $view-radius: 137;
+        flex: 0 1 rem($view-width);
+        min-height: rem($view-height);
+        @include main-shape($view-radius, 2);
+        background: url("../images/about/room-about.jpeg") center / cover;
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: rem($view-width);
+          min-height: rem($view-height);
+          @include main-shape($view-radius, 2);
+          border-color: $decor-color;
+          position: absolute;
+          top: rem(-32);
+          left: rem(-35);
+          z-index: -2;
+        }
+      }
+      .content-about {
+        flex: 0 1 rem(545);
+        min-height: rem(580);
+        display: flex;
+        flex-direction: column;
+
+        &__subtitle {
+          text-transform: uppercase;
+          font-weight: 500;
+          color: $main-text-color;
+          font-size: rem(20);
+          line-height: rem(30);
+        }
+        &__title {
+            @extend %title-font-style;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-size: rem(48);
+            line-height: rem(57);
+            margin-top: rem(29);
+        }
+        &__text {
+            color: $main-text-color;
+            line-height: rem(18);
+            margin-top: rem(30);
+            padding: rem(5);
+            margin-top: rem(15);
+        }
+        &__btn {
+          width: rem(140);
+          min-height: rem(42);
+          text-align: center;
+          line-height: em(35,16);
+          font-weight: 700;
+          margin-top: rem(17);
+          @include main-shape(20, 5);
+          text-transform: uppercase;
+          background-color: $btn-main-color;
+          color: #ffffff;
+          transition: all 0.3s;
+          &:hover {
+            border-color: $btn-main-color;
+            color: $btn-main-color;
+            background-color: #ffffff;
+          }
+        
+        }
       }
     }
   }
