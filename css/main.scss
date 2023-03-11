@@ -1,98 +1,189 @@
 @import "_variables", "_functions";
-.main{
-    width: 100%;
-    flex: 1 1 auto;
+.main {
+  width: 100%;
+  flex: 1 1 auto;
   .project {
     @include main-container();
     &__container {
-        display: flex;
-        align-items: center;
-        padding: rem(42) rem(85) rem(75) rem(56);
-        gap:rem(14);
-        position: relative;
-        &::before{
-            content: '';
-            display: block;
-            width: vw(208);
-            height:vw(150);
-            background: url("../images/project/decor.svg") center/cover;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
+      display: flex;
+      align-items: center;
+      padding: rem(42) rem(85) rem(75) rem(56);
+      gap: rem(14);
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: vw(208);
+        height: vw(150);
+        background: url("../images/project/decor.svg") center/cover;
+        position: absolute;
+        bottom: 0;
+        left: vw(-208);
+      }
       .content {
         flex: 0 1 rem(625);
-        min-height:rem(458) ;
+        min-height: rem(458);
         display: flex;
         flex-direction: column;
-          
+
         &__subtitle {
-            text-transform: uppercase;
-            font-weight: 600;
-            color: $main-text-color;
-            font-size: rem(20);
-            line-height: rem(27);
+          text-transform: uppercase;
+          font-weight: 600;
+          color: $main-text-color;
+          font-size: rem(20);
+          line-height: rem(27);
         }
         &__title {
-           @extend %title-font-style;
-            font-weight: 600;
-            font-size: rem(72);
-            line-height: rem(78);
-            margin-top: rem(13);
+          @extend %title-font-style;
+          font-weight: 600;
+          text-transform: capitalize;
+          font-size: rem(72);
+          line-height: rem(78);
+          margin-top: rem(13);
         }
         &__text {
-            color: $main-text-color;
-            line-height: rem(30);
-            margin-top: rem(26);
+          color: $main-text-color;
+          line-height: rem(30);
+          margin-top: rem(26);
         }
         &__btn {
-            width: rem(147);
-            min-height: rem(48);
-            text-align: center;
-            line-height: em(40,18);
-            font-weight: 700;
-            margin-top: rem(31);
-
-            @include main-shape(20,5);
-            text-transform: uppercase;
-            background-color: $btn-main-color;
-            color: #FFFFFF;
-            &:hover {
+          width: rem(147);
+          min-height: rem(48);
+          text-align: center;
+          line-height: em(40, 18);
+          font-weight: 700;
+          margin-top: rem(31);
+          @include main-shape(20, 5);
+          text-transform: uppercase;
+          background-color: $btn-main-color;
+          color: #ffffff;
+          transition: all 0.3s;
+          &:hover {
             border-color: $btn-main-color;
-            color: $btn-main-color;  
-            background-color: #FFFFFF;
+            color: $btn-main-color;
+            background-color: #ffffff;
           }
-         
         }
       }
-  
+
       .view {
-        $view-width:703;
-        $view-height:646;
-        $view-radius:137;
+        $view-width: 703;
+        $view-height: 646;
+        $view-radius: 137;
         flex: 0 1 rem($view-width);
         min-height: rem($view-height);
-        @include main-shape($view-radius,2);
+        @include main-shape($view-radius, 2);
         background: url("../images/project/room.jpeg") center / cover;
         position: relative;
-        &::after{
-            content: '';
-            display: block;
-            width: rem($view-width);
-            min-height: rem($view-height);
-            @include main-shape($view-radius,2);
-            border-color: $decor-color;
-            position: absolute;
-            top: rem(32);
-            left: rem(34);
-            z-index: -2;
+        &::after {
+          content: "";
+          display: block;
+          width: rem($view-width);
+          min-height: rem($view-height);
+          @include main-shape($view-radius, 2);
+          border-color: $decor-color;
+          position: absolute;
+          top: rem(32);
+          left: rem(34);
+          z-index: -2;
         }
       }
-    
-       
-        
-      
     }
   }
+  .services {
+    &__container {
+      @include main-container();
+      padding-top: rem(143);
+      min-height: rem(920);
+      display: flex;
+      flex-direction: column;
 
+      .service {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__item {
+          width: rem(470);
+          min-height: rem(165);
+          padding: rem(10) rem(24) rem(30) rem(44);
+          display: flex;
+          align-items: center;
+          column-gap: rem(22);
+          @include main-shape(60, 2);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          &:hover {
+            background-color: $btn-color;
+            color: #ffffff;
+            .service__title,
+            .service__description {
+              color: #ffffff;
+            }
+          }
+        }
+        &__icon {
+          width: rem(44);
+          height: rem(34);
+        }
+
+        .service__title {
+          font-weight: 700;
+          font-size: rem(24);
+          line-height: rem(50);
+          color: $title-color;
+          text-transform: capitalize;
+        }
+        .service__description {
+          font-weight: 400;
+          font-size: rem(18);
+          line-height: rem(28);
+          letter-spacing: -0.01em;
+          color: $main-text-color;
+        }
+      }
+    }
+    &__subtitle {
+      text-transform: uppercase;
+      font-size: rem(20);
+      line-height: rem(28);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: $main-text-color;
+      margin-left: rem(23);
+    }
+    &__title {
+      @extend %title-font-style;
+      font-weight: 500;
+      text-transform: capitalize;
+      font-size: rem(48);
+      line-height: rem(78);
+      color: $title-color;
+      margin-left: rem(23);
+    }
+    &__menu {
+      display: flex;
+      gap: vw(75);
+      font-size: rem(16);
+      margin: rem(29) 0 rem(110) rem(23);
+    }
+
+    &__btn {
+      @extend %main-text-style;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: rem(20);
+      border: rem(5) solid transparent;
+      background-color: $btn-main-color;
+      color: #ffffff;
+      line-height: 2em;
+      min-width: rem(203);
+      text-align: center;
+      transition: all 0.3s;
+      &:hover {
+        color: $btn-main-color;
+        background-color: #ffffff;
+        border-color: $btn-main-color;
+      }
+    }
+  }
 }

@@ -1,15 +1,23 @@
-.main .project__container .content__title {
+.main .services__title, .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
+}
+
+.main .services__btn {
+  font-family: "Open Sans", serif;
 }
 
 /*>=992 Desktop, large screens*/
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.main .project__container .content__title {
+.main .services__title, .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
+}
+
+.main .services__btn {
+  font-family: "Open Sans", serif;
 }
 
 /*>=992 Desktop, large screens*/
@@ -46,7 +54,7 @@
   background: url("../images/project/decor.svg") center/cover;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -11.0638297872vw;
 }
 .main .project__container .content {
   -webkit-box-flex: 0;
@@ -70,6 +78,7 @@
 }
 .main .project__container .content__title {
   font-weight: 600;
+  text-transform: capitalize;
   font-size: 4.5rem;
   line-height: 4.875rem;
   margin-top: 0.8125rem;
@@ -92,12 +101,14 @@
   border-style: solid;
   text-transform: uppercase;
   background-color: #37806B;
-  color: #FFFFFF;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .main .project__container .content__btn:hover {
   border-color: #37806B;
   color: #37806B;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .main .project__container .view {
   -webkit-box-flex: 0;
@@ -125,4 +136,119 @@
   top: 2rem;
   left: 2.125rem;
   z-index: -2;
+}
+.main .services__container {
+  width: 80.8510638298vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  padding-top: 8.9375rem;
+  min-height: 57.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .services__container .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main .services__container .service__item {
+  width: 29.375rem;
+  min-height: 10.3125rem;
+  padding: 0.625rem 1.5rem 1.875rem 2.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1.375rem;
+     -moz-column-gap: 1.375rem;
+          column-gap: 1.375rem;
+  border-radius: 3.75rem 0rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  border-style: solid;
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.main .services__container .service__item:hover {
+  background-color: #CAA892;
+  color: #ffffff;
+}
+.main .services__container .service__item:hover .service__title,
+.main .services__container .service__item:hover .service__description {
+  color: #ffffff;
+}
+.main .services__container .service__icon {
+  width: 2.75rem;
+  height: 2.125rem;
+}
+.main .services__container .service .service__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 3.125rem;
+  color: #212121;
+  text-transform: capitalize;
+}
+.main .services__container .service .service__description {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  color: #646464;
+}
+.main .services__subtitle {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #646464;
+  margin-left: 1.4375rem;
+}
+.main .services__title {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 3rem;
+  line-height: 4.875rem;
+  color: #212121;
+  margin-left: 1.4375rem;
+}
+.main .services__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.9893617021vw;
+  font-size: 1rem;
+  margin: 1.8125rem 0 6.875rem 1.4375rem;
+}
+.main .services__btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 1.25rem;
+  border: 0.3125rem solid transparent;
+  background-color: #37806B;
+  color: #ffffff;
+  line-height: 2em;
+  min-width: 12.6875rem;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.main .services__btn:hover {
+  color: #37806B;
+  background-color: #ffffff;
+  border-color: #37806B;
 }
