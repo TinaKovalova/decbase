@@ -15,10 +15,18 @@
 }
 
 @mixin main-container(){
-    width: size-vw($container-width);
-    padding: 0 size-em($container-padding);
+    width: vw($container-width);
+    padding: 0 em($container-padding);
     margin: 0 auto;
-  }
+}
+
+@mixin main-shape($borderRadius,$borderWidth ) {
+    border-radius: rem($borderRadius) rem(0);
+    border-width: rem($borderWidth);
+    border-color: transparent;
+    border-style: solid;
+    
+}
 
 @mixin desktop() {
   @media (max-width: $breakpoint-desktop) {

@@ -2,5 +2,97 @@
 .main{
     width: 100%;
     flex: 1 1 auto;
+  .project {
+    @include main-container();
+    &__container {
+        display: flex;
+        align-items: center;
+        padding: rem(42) rem(85) rem(75) rem(56);
+        gap:rem(14);
+        position: relative;
+        &::before{
+            content: '';
+            display: block;
+            width: vw(208);
+            height:vw(150);
+            background: url("../images/project/decor.svg") center/cover;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+      .content {
+        flex: 0 1 rem(625);
+        min-height:rem(458) ;
+        display: flex;
+        flex-direction: column;
+          
+        &__subtitle {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $main-text-color;
+            font-size: rem(20);
+            line-height: rem(27);
+        }
+        &__title {
+           @extend %title-font-style;
+            font-weight: 600;
+            font-size: rem(72);
+            line-height: rem(78);
+            margin-top: rem(13);
+        }
+        &__text {
+            color: $main-text-color;
+            line-height: rem(30);
+            margin-top: rem(26);
+        }
+        &__btn {
+            width: rem(147);
+            min-height: rem(48);
+            text-align: center;
+            line-height: em(40,18);
+            font-weight: 700;
+            margin-top: rem(31);
+
+            @include main-shape(20,5);
+            text-transform: uppercase;
+            background-color: $btn-main-color;
+            color: #FFFFFF;
+            &:hover {
+            border-color: $btn-main-color;
+            color: $btn-main-color;  
+            background-color: #FFFFFF;
+          }
+         
+        }
+      }
+  
+      .view {
+        $view-width:703;
+        $view-height:646;
+        $view-radius:137;
+        flex: 0 1 rem($view-width);
+        min-height: rem($view-height);
+        @include main-shape($view-radius,2);
+        background: url("../images/project/room.jpeg") center / cover;
+        position: relative;
+        &::after{
+            content: '';
+            display: block;
+            width: rem($view-width);
+            min-height: rem($view-height);
+            @include main-shape($view-radius,2);
+            border-color: $decor-color;
+            position: absolute;
+            top: rem(32);
+            left: rem(34);
+            z-index: -2;
+        }
+      }
+    
+       
+        
+      
+    }
+  }
 
 }

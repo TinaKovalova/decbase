@@ -3,8 +3,9 @@
 
 .page{
     @extend %main-text-style;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: rem(28);
     box-sizing: border-box;
 
      
