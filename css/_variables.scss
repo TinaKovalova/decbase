@@ -19,6 +19,12 @@ $bg-color:#F8F8F8;
 %main-text-style {
     font-family: 'Open Sans', serif;
 }
+%green-btn-style{
+    text-transform: uppercase;
+    background-color: $btn-main-color;
+    color: #ffffff;
+    text-align: center;
+}
 %green-btn-hover-style{
     border-color: $btn-main-color;
     color: $btn-main-color;

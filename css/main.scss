@@ -48,17 +48,14 @@
         &__btn {
           width: rem(147);
           min-height: rem(48);
-          text-align: center;
           line-height: em(40, 18);
           font-weight: 700;
           margin-top: rem(31);
           @include main-shape(20, 5);
-          text-transform: uppercase;
-          background-color: $btn-main-color;
-          color: #ffffff;
+          @extend %green-btn-style;
           transition: all 0.3s;
           &:hover {
-            @extend %green-btn-hover-style
+            @extend %green-btn-hover-style;
           }
         }
       }
@@ -177,17 +174,14 @@
     &__btn {
       @extend %main-text-style;
       font-weight: 700;
-      text-transform: uppercase;
       border-radius: rem(20);
       border: rem(5) solid transparent;
-      background-color: $btn-main-color;
-      color: #ffffff;
       line-height: 2em;
       min-width: rem(203);
-      text-align: center;
+      @extend %green-btn-style;
       transition: all 0.3s;
       &:hover {
-        @extend %green-btn-hover-style
+        @extend %green-btn-hover-style;
       }
     }
   }
@@ -263,17 +257,14 @@
         &__btn {
           width: rem(140);
           min-height: rem(42);
-          text-align: center;
           line-height: em(35, 16);
           font-weight: 700;
           margin-top: rem(17);
           @include main-shape(20, 5);
-          text-transform: uppercase;
-          background-color: $btn-main-color;
-          color: #ffffff;
+          @extend %green-btn-style;
           transition: all 0.3s;
           &:hover {
-            @extend %green-btn-hover-style
+            @extend %green-btn-hover-style;
           }
         }
       }
@@ -328,17 +319,14 @@
         &__btn {
           width: rem(172);
           min-height: rem(44);
-          text-align: center;
           line-height: em(40, 18);
           font-weight: 700;
           margin-top: rem(19);
           @include main-shape(20, 5);
-          text-transform: uppercase;
-          background-color: $btn-main-color;
-          color: #ffffff;
+          @extend %green-btn-style;
           transition: all 0.3s;
           &:hover {
-            @extend %green-btn-hover-style
+            @extend %green-btn-hover-style;
           }
         }
       }
@@ -366,7 +354,7 @@
       }
     }
   }
-  
+
   .stat {
     background-color: $bg-color;
     &::after {
@@ -398,7 +386,7 @@
         column-gap: rem(190);
         margin-top: rem(87);
         min-height: rem(278);
-       
+
         &__item {
           display: flex;
           flex-direction: column;
@@ -412,9 +400,9 @@
           position: relative;
           z-index: 5;
         }
-        &__item:nth-child(even){
+        &__item:nth-child(even) {
           align-self: self-end;
-          &::before{
+          &::before {
             content: url("../images/stat/Vector3.svg");
             display: block;
             width: rem(218);
@@ -425,24 +413,22 @@
             z-index: 1;
           }
         }
-        &__item:nth-child(even):not(:last-child):after{
-            content: url("../images/stat/Vector2.svg");
-            display: block;
-            width: rem(218);
-            height: rem(95);
-            position: absolute;
-            right: -120%;
-            bottom: 50%;
-            z-index: 1;
-          }
-        
+        &__item:nth-child(even):not(:last-child):after {
+          content: url("../images/stat/Vector2.svg");
+          display: block;
+          width: rem(218);
+          height: rem(95);
+          position: absolute;
+          right: -120%;
+          bottom: 50%;
+          z-index: 1;
+        }
 
         &__count {
           font-weight: 700;
           font-size: rem(50);
           line-height: rem(60);
           color: $title-color;
-
         }
         &__name {
           color: $main-text-color;
@@ -451,10 +437,9 @@
           line-height: rem(30);
         }
       }
-     
     }
   }
-  
+
   .testimonials {
     min-width: rem(812);
 
@@ -465,22 +450,21 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-     
     }
     &__subtitle {
       text-transform: uppercase;
       @extend %title-font-style;
-          font-weight: 500;
-          color: $main-text-color;
-          font-size: rem(20);
-          line-height: rem(30);
+      font-weight: 500;
+      color: $main-text-color;
+      font-size: rem(20);
+      line-height: rem(30);
     }
     &__title {
       @extend %title-font-style;
-          font-weight: 500;
-          font-size: rem(48);
-          line-height: rem(72);
-          margin-top: rem(3);
+      font-weight: 500;
+      font-size: rem(48);
+      line-height: rem(72);
+      margin-top: rem(3);
     }
     &__buttons {
       width: rem(110);
@@ -496,15 +480,15 @@
     &__btn {
       width: rem(30);
       height: rem(30);
-      background-color:$btn-main-color;
+      background-color: $btn-main-color;
       box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
       color: #ffffff;
       border-radius: 50%;
       border: rem(2) solid transparent;
       transition: all 0.3s;
-       &:hover {
-           @extend %green-btn-hover-style
-        }
+      &:hover {
+        @extend %green-btn-hover-style;
+      }
     }
     &__content-wrapper {
       margin-top: rem(85);
@@ -512,51 +496,152 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: rem(155);
-      
     }
     &__item {
       @include main-shape(70, 0);
       width: rem(571);
       min-height: rem(226);
       padding: rem(40) rem(42) rem(60) rem(95);
-      background: #FFFFFF;
+      background: #ffffff;
       color: $main-text-color;
       box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
       position: relative;
-      &::after{
-        content: url('../images/testimonials/quotationMarks.svg');
-        color: $decor-color;
-        position: absolute;
-        top: rem(28);
-        right: rem(48);
-
-      }
     }
     &__avatar {
       position: absolute;
       left: rem(-65);
       top: rem(40);
-      width: rem(130) ;
+      width: rem(130);
       height: rem(130);
       @include main-shape(40, 0);
       object-fit: cover;
       object-position: 50% 35%;
-
-
+    }
+    &__user-data {
+      display: flex;
+    }
+    &__user-info {
+      display: flex;
     }
     &__user-name {
       color: $title-color;
-          font-weight: 700;
-          font-size: rem(24);
-          line-height: rem(33);
-          margin-top: rem(3);
+      font-weight: 700;
+      font-size: rem(24);
+      line-height: rem(33);
+      margin-top: rem(3);
     }
     &__user-position {
       font-size: rem(16);
       line-height: rem(22);
     }
-    &__text {    
+    &__marks {
+      flex: 1 1 auto;
+      align-self: flex-end;
+      font-family: "Basic Sans SF Bold";
+      font-weight: 700;
+      color: $decor-color;
+      font-size: rem(96);
+      text-align: end;
+    }
+    &__text {
       margin-top: rem(8);
+    }
+  }
+
+  .news {
+    min-width: rem(1030);
+    background-color: $bg-color;
+    &__container {
+      @include main-container();
+      padding: rem(90) rem(10) rem(122) rem(100);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    &__subtitle {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $main-text-color;
+      font-size: rem(20);
+      line-height: rem(28);
+    }
+    &__section-title {
+      @extend %title-font-style;
+          font-weight: 500;
+          text-transform: capitalize;
+          font-size: rem(48);
+          line-height: rem(28);
+          margin-top: rem(21);
+    }
+    &__wrapper {
+      margin-top: rem(82);
+      display: flex;
+      gap: rem(119);      
+    }
+    &__item {
+      flex: 0 1 rem(620);
+      min-height: rem(646);
+       
+    }
+    &__view {
+      display:block;
+      $view-width:554;
+      $view-height:387;
+      $view-radius:96;
+      width: rem($view-width);
+      height: rem($view-height);  
+      position: relative;
+      z-index: 2;
+        &::after {
+          content: "";
+          display: block;
+          width: rem($view-width);
+          min-height: rem($view-height);
+          @include main-shape($view-radius, 2);
+          border-color: $decor-color;
+          position: absolute;
+          top: rem(16);
+          left: rem(16);
+          z-index: -1;
+        }
+        .news__img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          @include main-shape($view-radius, 2);
+        }
+
+    }
+    
+
+    &__title {
+      margin-top:rem(60);
+      font-weight: 600;
+      @extend %title-font-style;
+      text-transform: capitalize;
+      font-size: rem(28);
+      line-height: rem(28);
+    }
+    &__descriptions {
+      margin-top: rem(17);
+    }
+    &__btn {
+      display: inline-block;
+      box-sizing: border-box;
+       min-width: rem(278);
+       min-height: rem(55);
+       font-weight: 600;
+       line-height: rem(32);
+       margin-top: rem(45);
+       padding: rem(5);
+       @extend %green-btn-style;
+       @include main-shape(25, 5);
+       transition: all 0.3s;
+      &:hover {
+        @extend %green-btn-hover-style;
+      }
+     
     }
   }
 }
