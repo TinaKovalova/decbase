@@ -3,7 +3,6 @@
   width: 100%;
   flex: 1 1 auto;
   .project {
-   
     &__container {
       @include main-container();
       display: flex;
@@ -98,22 +97,21 @@
       min-height: rem(920);
       display: flex;
       flex-direction: column;
-      &::after{
-        content: "";
-    display: block;
-    width: vw(242);
-    height: vw(255);
-    background: url("../images/services/decor_service.svg") center/cover;
-    position: absolute;
-    bottom:0;
-    right: 0;
-    }
+      // &::after {
+      //   content: url("../images/services/decor_service.svg");
+      //   display: block;
+      //   width: vw(242);
+      //   height: vw(255);
+      //   position: absolute;
+      //   bottom: 0;
+      //   right: 0;
+      // }
 
       .service {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        
+
         &__item {
           width: rem(470);
           min-height: rem(165);
@@ -198,24 +196,23 @@
       }
     }
   }
-  
+
   .about {
     &__container {
-        @include main-container();
-        display: flex;
-        justify-content: center;
-        padding: rem(142) rem(50);
-        gap: rem(120);
-        &::before {
-          content: "";
-          display: block;
-          width: vw(208);
-          height: vw(150);
-          background: url("../images/about/decor-about.svg") center/cover;
-          position: absolute;
-          bottom: vw(-75);
-          left: vw(208);
-        }
+      @include main-container();
+      display: flex;
+      justify-content: center;
+      padding: rem(142) rem(50);
+      gap: rem(120);
+      // &::before {
+      //   content: url("../images/about/decor-about.svg");
+      //   display: inline-block;
+      //   width: vw(208);
+      //   height: vw(150);
+      //   position: absolute;
+      //   bottom: vw(-75);
+      //   left: vw(208);
+      // }
 
       .view-about {
         $view-width: 669;
@@ -253,25 +250,26 @@
           line-height: rem(30);
         }
         &__title {
-            @extend %title-font-style;
-            font-weight: 500;
-            text-transform: capitalize;
-            font-size: rem(48);
-            line-height: rem(57);
-            margin-top: rem(29);
+          @extend %title-font-style;
+          font-weight: 500;
+          text-transform: capitalize;
+          font-size: rem(48);
+          line-height: rem(57);
+          margin-top: rem(29);
         }
         &__text {
-            color: $main-text-color;
-            line-height: rem(18);
-            margin-top: rem(30);
-            padding: rem(5);
-            margin-top: rem(15);
+          color: $main-text-color;
+          line-height: rem(18);
+          margin-top: rem(30);
+          padding: rem(5);
+          margin-top: rem(15);
+          white-space: pre-line;
         }
         &__btn {
           width: rem(140);
           min-height: rem(42);
           text-align: center;
-          line-height: em(35,16);
+          line-height: em(35, 16);
           font-weight: 700;
           margin-top: rem(17);
           @include main-shape(20, 5);
@@ -284,50 +282,47 @@
             color: $btn-main-color;
             background-color: #ffffff;
           }
-        
         }
       }
     }
   }
-  
+
   .shop {
     &__container {
       @include main-container();
       display: flex;
       align-items: center;
-      padding: rem(55) rem(50);
+      padding: rem(55) rem(50) rem(272);
       gap: rem(32);
       justify-content: space-around;
       position: relative;
-      &::after{
-        content: "";
+      &::after {
+        content: url("../images/shop/decore-shop.svg");
         display: block;
         width: vw(208);
         height: vw(154);
-        background: url("../images/shop/decore-shop.svg") center/cover;
         position: absolute;
         top: 40%;
-        right: vw(214);
+        right: -10%;
       }
       .content-shop {
         flex: 0 1 rem(638);
         min-height: rem(660);
         display: flex;
         flex-direction: column;
-        
+
         &__counter {
           flex: 0 1 rem(310);
           min-height: rem(220);
           text-transform: uppercase;
           font-weight: 700;
           line-height: 1em;
-          color:transparent;
-          background: url('../images/shop/number-bg.jpeg') rem(900)/rem(960);
+          color: transparent;
+          background: url("../images/shop/number-bg.jpeg") rem(900) / rem(960);
           background-position: 30% 54%;
           background-clip: text;
           font-size: 288px;
           letter-spacing: -0.01em;
-         
         }
         &__title {
           @extend %title-font-style;
@@ -380,5 +375,83 @@
       }
     }
   }
- 
+  
+  .stat {
+    background-color: $bg-color;
+    &__container {
+      @include main-container();
+      padding: rem(82) rem(100);
+      .stat__title {
+        @extend %title-font-style;
+        width: vw(821);
+        margin: 0 auto;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: rem(48);
+        line-height: rem(60);
+        text-align: center;
+        white-space: pre-line;
+      }
+      .data {
+        display: flex;
+        align-items: flex-start;
+        column-gap: rem(190);
+        margin-top: rem(87);
+        min-height: rem(278);
+       
+        &__item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          flex: 0 1 rem(185);
+          min-height: rem(182);
+          @include main-shape(40, 2);
+          background-color: #ffffff;
+          box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+          position: relative;
+          z-index: 5;
+        }
+        &__item:nth-child(even){
+          align-self: self-end;
+          &::before{
+            content: url("../images/stat/Vector3.svg");
+            display: block;
+            width: rem(218);
+            height: rem(106);
+            position: absolute;
+            left: -120%;
+            top: -2%;
+            z-index: 1;
+          }
+        }
+        &__item:nth-child(even):not(:last-child):after{
+            content: url("../images/stat/Vector2.svg");
+            display: block;
+            width: rem(218);
+            height: rem(95);
+            position: absolute;
+            right: -120%;
+            bottom: 50%;
+            z-index: 1;
+          }
+        
+
+        &__count {
+          font-weight: 700;
+          font-size: rem(50);
+          line-height: rem(60);
+          color: $title-color;
+
+        }
+        &__name {
+          color: $main-text-color;
+          text-transform: capitalize;
+          font-weight: 700;
+          line-height: rem(30);
+        }
+      }
+     
+    }
+  }
 }

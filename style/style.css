@@ -3,7 +3,7 @@
   font-family: "Basic Sans SF Bold";
   src: url("fonts/BasicSansSFBold.ttf");
 }
-.page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -16,7 +16,7 @@
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -659,14 +659,14 @@ template {
     src: url("fonts/BasicSansSFBold.ttf");
   }
 }
-.page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
 }
-.page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -779,14 +779,14 @@ template {
 .page .wrapper .header__container .auth__link {
   color: #FFFFFF;
 }
-.page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
 }
-.page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -918,16 +918,6 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.page .wrapper .main .services__container::after {
-  content: "";
-  display: block;
-  width: 12.8723404255vw;
-  height: 13.5638297872vw;
-  background: url("../images/services/decor_service.svg") center/cover;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 .page .wrapper .main .services__container .service {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1042,16 +1032,6 @@ template {
   padding: 8.875rem 3.125rem;
   gap: 7.5rem;
 }
-.page .wrapper .main .about__container::before {
-  content: "";
-  display: block;
-  width: 11.0638297872vw;
-  height: 7.9787234043vw;
-  background: url("../images/about/decor-about.svg") center/cover;
-  position: absolute;
-  bottom: -3.9893617021vw;
-  left: 11.0638297872vw;
-}
 .page .wrapper .main .about__container .view-about {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 41.8125rem;
@@ -1112,6 +1092,7 @@ template {
   margin-top: 1.875rem;
   padding: 0.3125rem;
   margin-top: 0.9375rem;
+  white-space: pre-line;
 }
 .page .wrapper .main .about__container .content-about__btn {
   width: 8.75rem;
@@ -1145,21 +1126,20 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3.4375rem 3.125rem;
+  padding: 3.4375rem 3.125rem 17rem;
   gap: 2rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
 }
 .page .wrapper .main .shop__container::after {
-  content: "";
+  content: url("../images/shop/decore-shop.svg");
   display: block;
   width: 11.0638297872vw;
   height: 8.1914893617vw;
-  background: url("../images/shop/decore-shop.svg") center/cover;
   position: absolute;
   top: 40%;
-  right: 11.3829787234vw;
+  right: -10%;
 }
 .page .wrapper .main .shop__container .content-shop {
   -webkit-box-flex: 0;
@@ -1245,4 +1225,100 @@ template {
   bottom: -1.75rem;
   left: 1.875rem;
   z-index: -2;
+}
+.page .wrapper .main .stat {
+  background-color: #F8F8F8;
+}
+.page .wrapper .main .stat__container {
+  width: 80.8510638298vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  padding: 5.125rem 6.25rem;
+}
+.page .wrapper .main .stat__container .stat__title {
+  width: 43.670212766vw;
+  margin: 0 auto;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 3rem;
+  line-height: 3.75rem;
+  text-align: center;
+  white-space: pre-line;
+}
+.page .wrapper .main .stat__container .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 11.875rem;
+     -moz-column-gap: 11.875rem;
+          column-gap: 11.875rem;
+  margin-top: 5.4375rem;
+  min-height: 17.375rem;
+}
+.page .wrapper .main .stat__container .data__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 11.5625rem;
+          flex: 0 1 11.5625rem;
+  min-height: 11.375rem;
+  border-radius: 2.5rem 0rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  border-style: solid;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 5;
+}
+.page .wrapper .main .stat__container .data__item:nth-child(even) {
+  -ms-flex-item-align: self-end;
+      align-self: self-end;
+}
+.page .wrapper .main .stat__container .data__item:nth-child(even)::before {
+  content: url("../images/stat/Vector3.svg");
+  display: block;
+  width: 13.625rem;
+  height: 6.625rem;
+  position: absolute;
+  left: -120%;
+  top: -2%;
+  z-index: 1;
+}
+.page .wrapper .main .stat__container .data__item:nth-child(even):not(:last-child):after {
+  content: url("../images/stat/Vector2.svg");
+  display: block;
+  width: 13.625rem;
+  height: 5.9375rem;
+  position: absolute;
+  right: -120%;
+  bottom: 50%;
+  z-index: 1;
+}
+.page .wrapper .main .stat__container .data__count {
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 3.75rem;
+  color: #212121;
+}
+.page .wrapper .main .stat__container .data__name {
+  color: #646464;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 1.875rem;
 }
