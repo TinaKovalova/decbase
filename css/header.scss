@@ -11,6 +11,7 @@
     background-color: #FFFFFF;
     position: sticky;
     top: 0;
+    z-index: 20;
   
     &__container {
         @include main-container();

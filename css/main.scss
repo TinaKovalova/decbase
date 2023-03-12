@@ -549,15 +549,24 @@
   }
 
   .news {
-    min-width: rem(1030);
+    min-height: rem(1022);
     background-color: $bg-color;
+    position: relative;
+    &::after {
+      content: url("../images/news/decor-news.svg");
+      display: block;
+      width: vw(209);
+      height: vw(154);
+      position: absolute;
+      bottom: rem(-80);
+      right: 0;
+    }
     &__container {
       @include main-container();
       padding: rem(90) rem(10) rem(122) rem(100);
       display: flex;
       flex-direction: column;
       align-items: center;
-      
     }
     &__subtitle {
       text-transform: uppercase;
@@ -568,55 +577,52 @@
     }
     &__section-title {
       @extend %title-font-style;
-          font-weight: 500;
-          text-transform: capitalize;
-          font-size: rem(48);
-          line-height: rem(28);
-          margin-top: rem(21);
+      font-weight: 500;
+      text-transform: capitalize;
+      font-size: rem(48);
+      line-height: rem(28);
+      margin-top: rem(21);
     }
     &__wrapper {
       margin-top: rem(82);
       display: flex;
-      gap: rem(119);      
+      gap: rem(119);
     }
     &__item {
       flex: 0 1 rem(620);
       min-height: rem(646);
-       
     }
     &__view {
-      display:block;
-      $view-width:554;
-      $view-height:387;
-      $view-radius:96;
+      display: block;
+      $view-width: 554;
+      $view-height: 387;
+      $view-radius: 96;
       width: rem($view-width);
-      height: rem($view-height);  
+      height: rem($view-height);
       position: relative;
       z-index: 2;
-        &::after {
-          content: "";
-          display: block;
-          width: rem($view-width);
-          min-height: rem($view-height);
-          @include main-shape($view-radius, 2);
-          border-color: $decor-color;
-          position: absolute;
-          top: rem(16);
-          left: rem(16);
-          z-index: -1;
-        }
-        .news__img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          @include main-shape($view-radius, 2);
-        }
-
+      &::after {
+        content: "";
+        display: block;
+        width: rem($view-width);
+        min-height: rem($view-height);
+        @include main-shape($view-radius, 2);
+        border-color: $decor-color;
+        position: absolute;
+        top: rem(16);
+        left: rem(16);
+        z-index: -1;
+      }
+      .news__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include main-shape($view-radius, 2);
+      }
     }
-    
 
     &__title {
-      margin-top:rem(60);
+      margin-top: rem(60);
       font-weight: 600;
       @extend %title-font-style;
       text-transform: capitalize;
@@ -629,19 +635,105 @@
     &__btn {
       display: inline-block;
       box-sizing: border-box;
-       min-width: rem(278);
-       min-height: rem(55);
-       font-weight: 600;
-       line-height: rem(32);
-       margin-top: rem(45);
-       padding: rem(5);
-       @extend %green-btn-style;
-       @include main-shape(25, 5);
-       transition: all 0.3s;
+      min-width: rem(278);
+      min-height: rem(55);
+      font-weight: 600;
+      line-height: rem(32);
+      margin-top: rem(45);
+      padding: rem(5);
+      @extend %green-btn-style;
+      @include main-shape(25, 5);
+      transition: all 0.3s;
       &:hover {
         @extend %green-btn-hover-style;
       }
-     
+    }
+  }
+
+  .subscribe {
+    min-height: rem(702);
+    padding-top: rem(103);
+    &::after {
+      content: url("../images/subscribe/decor-subscribe.svg");
+      display: block;
+      width: vw(213);
+      height: vw(154);
+      position: absolute;
+      bottom: rem(-105);
+      left: rem(5);
+    }
+    &__container {
+      @include main-container();
+      display: flex;
+      justify-content: center;
+    }
+    &__form {
+      flex: 0 1 vw(772);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: rem(503);
+      color: $main-text-color;
+    }
+    &__form-title {
+      @extend %title-font-style;
+      font-weight: 500;
+      text-transform: capitalize;
+      font-size: rem(48);
+      line-height: rem(28);
+      letter-spacing: 0.08em;
+      &::after {
+        content: "";
+        display: block;
+        width: vw(461);
+        border: 1px solid $main-text-color;
+        margin: rem(40) auto;
+      }
+    }
+    &__form-info {
+      max-width: vw(646);
+      text-align: center;
+    }
+    &__user-data {
+      display: flex;
+      min-width: 100%;
+      justify-content: space-between;
+      margin-top: rem(40);
+    }
+
+    &__user-name,
+    &__user-surname,
+    &__user-email {
+      @include main-shape(20, 0);
+      background-color: #eeeeee;
+      line-height: rem(55);
+      font-weight: 500;
+      display: inline-block;
+      padding: 0 rem(30);
+    }
+    &__user-name,
+    &__user-surname {
+      flex: 0 1 rem(328);
+    }
+    &__user-email {
+      flex: 1 1 auto;
+      min-width: 100%;
+      margin-top: rem(59);
+    }
+
+    &__btn {
+      margin-top: rem(92);
+      min-width: vw(180);
+      @extend %green-btn-style;
+      @include main-shape(20, 5);
+      border-radius: 0 0 rem(20) 0;
+      line-height: rem(30);
+      font-weight: 600;
+      transition: all 0.3s;
+      &:hover {
+        @extend %green-btn-hover-style;
+      }
     }
   }
 }

@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 700;
 }
-.page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -14,14 +14,14 @@
   font-family: "Open Sans", serif;
 }
 
-.page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
+.page .wrapper .main .subscribe__btn, .page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
   text-transform: uppercase;
   background-color: #37806B;
   color: #ffffff;
   text-align: center;
 }
 
-.page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+.page .wrapper .main .subscribe__btn:hover, .page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
   border-color: #37806B;
   color: #37806B;
   background-color: #ffffff;
@@ -31,7 +31,7 @@
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -40,14 +40,14 @@
   font-family: "Open Sans", serif;
 }
 
-.page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
+.page .wrapper .main .subscribe__btn, .page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
   text-transform: uppercase;
   background-color: #37806B;
   color: #ffffff;
   text-align: center;
 }
 
-.page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+.page .wrapper .main .subscribe__btn:hover, .page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
   border-color: #37806B;
   color: #37806B;
   background-color: #ffffff;
@@ -689,38 +689,38 @@ template {
     font-weight: 700;
   }
 }
-.page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
 }
-.page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
+.page .wrapper .main .subscribe__btn, .page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
   text-transform: uppercase;
   background-color: #37806B;
   color: #ffffff;
   text-align: center;
 }
-.page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+.page .wrapper .main .subscribe__btn:hover, .page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
   border-color: #37806B;
   color: #37806B;
   background-color: #ffffff;
 }
-.page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
 }
-.page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
+.page .wrapper .main .subscribe__btn, .page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
   text-transform: uppercase;
   background-color: #37806B;
   color: #ffffff;
   text-align: center;
 }
-.page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+.page .wrapper .main .subscribe__btn:hover, .page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
   border-color: #37806B;
   color: #37806B;
   background-color: #ffffff;
@@ -736,6 +736,7 @@ template {
   background-color: #FFFFFF;
   position: sticky;
   top: 0;
+  z-index: 20;
 }
 .page .wrapper .header__container {
   width: 80.8510638298vw;
@@ -831,38 +832,38 @@ template {
 .page .wrapper .header__container .auth__link {
   color: #FFFFFF;
 }
-.page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
 }
-.page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
+.page .wrapper .main .subscribe__btn, .page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
   text-transform: uppercase;
   background-color: #37806B;
   color: #ffffff;
   text-align: center;
 }
-.page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+.page .wrapper .main .subscribe__btn:hover, .page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
   border-color: #37806B;
   color: #37806B;
   background-color: #ffffff;
 }
-.page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
 }
-.page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
+.page .wrapper .main .subscribe__btn, .page .wrapper .main .news__btn, .page .wrapper .main .shop__container .content-shop__btn, .page .wrapper .main .about__container .content-about__btn, .page .wrapper .main .services__btn, .page .wrapper .main .project__container .content__btn {
   text-transform: uppercase;
   background-color: #37806B;
   color: #ffffff;
   text-align: center;
 }
-.page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+.page .wrapper .main .subscribe__btn:hover, .page .wrapper .main .news__btn:hover, .page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
   border-color: #37806B;
   color: #37806B;
   background-color: #ffffff;
@@ -1509,8 +1510,18 @@ template {
   margin-top: 0.5rem;
 }
 .page .wrapper .main .news {
-  min-width: 64.375rem;
+  min-height: 63.875rem;
   background-color: #F8F8F8;
+  position: relative;
+}
+.page .wrapper .main .news::after {
+  content: url("../images/news/decor-news.svg");
+  display: block;
+  width: 11.1170212766vw;
+  height: 8.1914893617vw;
+  position: absolute;
+  bottom: -5rem;
+  right: 0;
 }
 .page .wrapper .main .news__container {
   width: 80.8510638298vw;
@@ -1611,6 +1622,114 @@ template {
   border-width: 0.3125rem;
   border-color: transparent;
   border-style: solid;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.page .wrapper .main .subscribe {
+  min-height: 43.875rem;
+  padding-top: 6.4375rem;
+}
+.page .wrapper .main .subscribe::before {
+  content: url("../images/subscribe/decor-subscribe.svg");
+  display: block;
+  width: 11.329787234vw;
+  height: 8.1914893617vw;
+  position: absolute;
+  bottom: -6.5625rem;
+  left: 0.3125rem;
+}
+.page .wrapper .main .subscribe__container {
+  width: 80.8510638298vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page .wrapper .main .subscribe__form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 41.0638297872vw;
+          flex: 0 1 41.0638297872vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 31.4375rem;
+  color: #646464;
+}
+.page .wrapper .main .subscribe__form-title {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 3rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.08em;
+}
+.page .wrapper .main .subscribe__form-title::after {
+  content: "";
+  display: block;
+  width: 24.5212765957vw;
+  border: 1px solid #646464;
+  margin: 2.5rem auto;
+}
+.page .wrapper .main .subscribe__form-info {
+  max-width: 34.3617021277vw;
+  text-align: center;
+}
+.page .wrapper .main .subscribe__user-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2.5rem;
+}
+.page .wrapper .main .subscribe__user-name, .page .wrapper .main .subscribe__user-surname, .page .wrapper .main .subscribe__user-email {
+  border-radius: 1.25rem 0rem;
+  border-width: 0rem;
+  border-color: transparent;
+  border-style: solid;
+  background-color: #EEEEEE;
+  line-height: 3.4375rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0 1.875rem;
+}
+.page .wrapper .main .subscribe__user-name, .page .wrapper .main .subscribe__user-surname {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20.5rem;
+          flex: 0 1 20.5rem;
+}
+.page .wrapper .main .subscribe__user-email {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 100%;
+  margin-top: 3.6875rem;
+}
+.page .wrapper .main .subscribe__btn {
+  margin-top: 5.75rem;
+  min-width: 9.5744680851vw;
+  border-radius: 1.25rem 0rem;
+  border-width: 0.3125rem;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 0 0 1.25rem 0;
+  line-height: 1.875rem;
+  font-weight: 600;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
