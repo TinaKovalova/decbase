@@ -11,11 +11,10 @@
       gap: rem(14);
       position: relative;
       &::before {
-        content: "";
+        content: url("../images/project/decor.svg");
         display: block;
         width: vw(208);
         height: vw(150);
-        background: url("../images/project/decor.svg") center/cover;
         position: absolute;
         bottom: 0;
         left: vw(-208);
@@ -59,9 +58,7 @@
           color: #ffffff;
           transition: all 0.3s;
           &:hover {
-            border-color: $btn-main-color;
-            color: $btn-main-color;
-            background-color: #ffffff;
+            @extend %green-btn-hover-style
           }
         }
       }
@@ -190,9 +187,7 @@
       text-align: center;
       transition: all 0.3s;
       &:hover {
-        color: $btn-main-color;
-        background-color: #ffffff;
-        border-color: $btn-main-color;
+        @extend %green-btn-hover-style
       }
     }
   }
@@ -278,9 +273,7 @@
           color: #ffffff;
           transition: all 0.3s;
           &:hover {
-            border-color: $btn-main-color;
-            color: $btn-main-color;
-            background-color: #ffffff;
+            @extend %green-btn-hover-style
           }
         }
       }
@@ -345,9 +338,7 @@
           color: #ffffff;
           transition: all 0.3s;
           &:hover {
-            border-color: $btn-main-color;
-            color: $btn-main-color;
-            background-color: #ffffff;
+            @extend %green-btn-hover-style
           }
         }
       }
@@ -378,6 +369,15 @@
   
   .stat {
     background-color: $bg-color;
+    &::after {
+      content: url("../images/stat/decor-stat.svg");
+      display: block;
+      width: vw(213);
+      height: vw(154);
+      position: absolute;
+      bottom: rem(-80);
+      left: rem(8);
+    }
     &__container {
       @include main-container();
       padding: rem(82) rem(100);
@@ -452,6 +452,111 @@
         }
       }
      
+    }
+  }
+  
+  .testimonials {
+    min-width: rem(812);
+
+    &__container {
+      @include main-container();
+      padding: rem(135) rem(5) rem(240) rem(50);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    &__subtitle {
+      text-transform: uppercase;
+      @extend %title-font-style;
+          font-weight: 500;
+          color: $main-text-color;
+          font-size: rem(20);
+          line-height: rem(30);
+    }
+    &__title {
+      @extend %title-font-style;
+          font-weight: 500;
+          font-size: rem(48);
+          line-height: rem(72);
+          margin-top: rem(3);
+    }
+    &__buttons {
+      width: rem(110);
+      font-weight: 700;
+      font-size: rem(20);
+      text-align: center;
+      vertical-align: middle;
+      display: flex;
+      justify-content: space-between;
+      align-self: flex-end;
+      margin-right: rem(150);
+    }
+    &__btn {
+      width: rem(30);
+      height: rem(30);
+      background-color:$btn-main-color;
+      box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      border-radius: 50%;
+      border: rem(2) solid transparent;
+      transition: all 0.3s;
+       &:hover {
+           @extend %green-btn-hover-style
+        }
+    }
+    &__content-wrapper {
+      margin-top: rem(85);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: rem(155);
+      
+    }
+    &__item {
+      @include main-shape(70, 0);
+      width: rem(571);
+      min-height: rem(226);
+      padding: rem(40) rem(42) rem(60) rem(95);
+      background: #FFFFFF;
+      color: $main-text-color;
+      box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+      position: relative;
+      &::after{
+        content: url('../images/testimonials/quotationMarks.svg');
+        color: $decor-color;
+        position: absolute;
+        top: rem(28);
+        right: rem(48);
+
+      }
+    }
+    &__avatar {
+      position: absolute;
+      left: rem(-65);
+      top: rem(40);
+      width: rem(130) ;
+      height: rem(130);
+      @include main-shape(40, 0);
+      object-fit: cover;
+      object-position: 50% 35%;
+
+
+    }
+    &__user-name {
+      color: $title-color;
+          font-weight: 700;
+          font-size: rem(24);
+          line-height: rem(33);
+          margin-top: rem(3);
+    }
+    &__user-position {
+      font-size: rem(16);
+      line-height: rem(22);
+    }
+    &__text {    
+      margin-top: rem(8);
     }
   }
 }

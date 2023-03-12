@@ -1,28 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&family=Raleway:wght@500&display=swap");
-@font-face {
-  font-family: "Basic Sans SF Bold";
-  src: url("fonts/BasicSansSFBold.ttf");
-}
-.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 
 .page .wrapper .main .services__btn, .page {
   font-family: "Open Sans", serif;
+}
+
+.page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+  border-color: #37806B;
+  color: #37806B;
+  background-color: #ffffff;
 }
 
 /*>=992 Desktop, large screens*/
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 
 .page .wrapper .main .services__btn, .page {
   font-family: "Open Sans", serif;
+}
+
+.page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+  border-color: #37806B;
+  color: #37806B;
+  background-color: #ffffff;
 }
 
 /*>=992 Desktop, large screens*/
@@ -653,25 +661,29 @@ template {
   /*>=480 Ipads, Tablets*/
   /*<=480 mobile*/
 }
-@font-face {
-  .page .wrapper {
-    font-family: "Basic Sans SF Bold";
-    src: url("fonts/BasicSansSFBold.ttf");
-  }
-}
-.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
 }
-.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+  border-color: #37806B;
+  color: #37806B;
+  background-color: #ffffff;
+}
+.page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
+}
+.page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+  border-color: #37806B;
+  color: #37806B;
+  background-color: #ffffff;
 }
 .page .wrapper .header {
   width: 100%;
@@ -779,19 +791,29 @@ template {
 .page .wrapper .header__container .auth__link {
   color: #FFFFFF;
 }
-.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
 }
-.page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+  border-color: #37806B;
+  color: #37806B;
+  background-color: #ffffff;
+}
+.page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 .page .wrapper .main .services__btn, .page .wrapper .page {
   font-family: "Open Sans", serif;
+}
+.page .wrapper .main .testimonials__btn:hover, .page .wrapper .main .shop__container .content-shop__btn:hover, .page .wrapper .main .about__container .content-about__btn:hover, .page .wrapper .main .services__btn:hover, .page .wrapper .main .project__container .content__btn:hover {
+  border-color: #37806B;
+  color: #37806B;
+  background-color: #ffffff;
 }
 .page .wrapper .main {
   width: 100%;
@@ -814,11 +836,10 @@ template {
   position: relative;
 }
 .page .wrapper .main .project__container::before {
-  content: "";
+  content: url("../images/project/decor.svg");
   display: block;
   width: 11.0638297872vw;
   height: 7.9787234043vw;
-  background: url("../images/project/decor.svg") center/cover;
   position: absolute;
   bottom: 0;
   left: -11.0638297872vw;
@@ -871,11 +892,6 @@ template {
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-.page .wrapper .main .project__container .content__btn:hover {
-  border-color: #37806B;
-  color: #37806B;
-  background-color: #ffffff;
 }
 .page .wrapper .main .project__container .view {
   -webkit-box-flex: 0;
@@ -1014,11 +1030,6 @@ template {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.page .wrapper .main .services__btn:hover {
-  color: #37806B;
-  background-color: #ffffff;
-  border-color: #37806B;
-}
 .page .wrapper .main .about__container {
   width: 80.8510638298vw;
   padding: 0 0.625em;
@@ -1111,11 +1122,6 @@ template {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.page .wrapper .main .about__container .content-about__btn:hover {
-  border-color: #37806B;
-  color: #37806B;
-  background-color: #ffffff;
-}
 .page .wrapper .main .shop__container {
   width: 80.8510638298vw;
   padding: 0 0.625em;
@@ -1194,11 +1200,6 @@ template {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.page .wrapper .main .shop__container .content-shop__btn:hover {
-  border-color: #37806B;
-  color: #37806B;
-  background-color: #ffffff;
-}
 .page .wrapper .main .shop__container .view-shop {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 41.8125rem;
@@ -1228,6 +1229,15 @@ template {
 }
 .page .wrapper .main .stat {
   background-color: #F8F8F8;
+}
+.page .wrapper .main .stat::after {
+  content: url("../images/stat/decor-stat.svg");
+  display: block;
+  width: 11.329787234vw;
+  height: 8.1914893617vw;
+  position: absolute;
+  bottom: -5rem;
+  left: 0.5rem;
 }
 .page .wrapper .main .stat__container {
   width: 80.8510638298vw;
@@ -1321,4 +1331,129 @@ template {
   text-transform: capitalize;
   font-weight: 700;
   line-height: 1.875rem;
+}
+.page .wrapper .main .testimonials {
+  min-width: 50.75rem;
+}
+.page .wrapper .main .testimonials__container {
+  width: 80.8510638298vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  padding: 8.4375rem 0.3125rem 15rem 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page .wrapper .main .testimonials__subtitle {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #646464;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+.page .wrapper .main .testimonials__title {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  margin-top: 0.1875rem;
+}
+.page .wrapper .main .testimonials__buttons {
+  width: 6.875rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 9.375rem;
+}
+.page .wrapper .main .testimonials__btn {
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: #37806B;
+  -webkit-box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  border-radius: 50%;
+  border: 0.125rem solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.page .wrapper .main .testimonials__content-wrapper {
+  margin-top: 5.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 9.6875rem;
+}
+.page .wrapper .main .testimonials__item {
+  border-radius: 4.375rem 0rem;
+  border-width: 0rem;
+  border-color: transparent;
+  border-style: solid;
+  width: 35.6875rem;
+  min-height: 14.125rem;
+  padding: 2.5rem 2.625rem 3.75rem 5.9375rem;
+  background: #FFFFFF;
+  color: #646464;
+  -webkit-box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+          box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+  position: relative;
+}
+.page .wrapper .main .testimonials__item::after {
+  content: url("../images/testimonials/quotationMarks.svg");
+  color: #B0855B;
+  position: absolute;
+  top: 1.75rem;
+  right: 3rem;
+}
+.page .wrapper .main .testimonials__avatar {
+  position: absolute;
+  left: -4.0625rem;
+  top: 2.5rem;
+  width: 8.125rem;
+  height: 8.125rem;
+  border-radius: 2.5rem 0rem;
+  border-width: 0rem;
+  border-color: transparent;
+  border-style: solid;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 35%;
+     object-position: 50% 35%;
+}
+.page .wrapper .main .testimonials__user-name {
+  color: #212121;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  margin-top: 0.1875rem;
+}
+.page .wrapper .main .testimonials__user-position {
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+.page .wrapper .main .testimonials__text {
+  margin-top: 0.5rem;
 }
