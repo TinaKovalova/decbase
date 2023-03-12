@@ -449,15 +449,6 @@
 .main .stat {
   background-color: #F8F8F8;
 }
-.main .stat::after {
-  content: url("../images/stat/decor-stat.svg");
-  display: block;
-  width: 11.329787234vw;
-  height: 8.1914893617vw;
-  position: absolute;
-  bottom: -5rem;
-  left: 0.5rem;
-}
 .main .stat__container {
   width: 80.8510638298vw;
   padding: 0 0.625em;
@@ -810,15 +801,6 @@
 .main .subscribe {
   min-height: 43.875rem;
   padding-top: 6.4375rem;
-}
-.main .subscribe::after {
-  content: url("../images/subscribe/decor-subscribe.svg");
-  display: block;
-  width: 11.329787234vw;
-  height: 8.1914893617vw;
-  position: absolute;
-  bottom: -6.5625rem;
-  left: 0.3125rem;
 }
 .main .subscribe__container {
   width: 80.8510638298vw;

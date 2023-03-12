@@ -6,3 +6,111 @@
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
+.footer {
+  min-height: 29.5625rem;
+  background-color: #F8F8F8;
+  color: #646464;
+}
+.footer__container {
+  width: 80.8510638298vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+}
+.footer__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5.5625rem 2.3125rem 4.3125rem;
+  gap: 3.2978723404vw;
+}
+.footer__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 18.6170212766vw;
+          flex: 0 1 18.6170212766vw;
+}
+.footer__logo-img {
+  width: 9.4375rem;
+  height: 2.9375rem;
+}
+.footer__description {
+  margin-top: 0.9375rem;
+}
+.footer-main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-main-menu .child-menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 10.6382978723vw;
+          flex: 0 1 10.6382978723vw;
+}
+.footer-main-menu .child-menu__title {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #212121;
+}
+.footer-main-menu .child-menu__item {
+  line-height: 3.125rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.footer-main-menu .child-menu__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #37806B;
+}
+.footer-main-menu .child-menu__item .menu__link {
+  color: inherit;
+}
+.footer-main-menu .networking__title {
+  text-align: center;
+}
+.footer-main-menu .networking .networking-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.625rem;
+}
+.footer-main-menu .networking .networking-list__item .menu__link {
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.footer-main-menu .networking .networking-list__item .menu__link:hover {
+  background-color: #37806B;
+}
+.footer-main-menu .networking .networking-list__item .twitter-link {
+  background: url("../images/footer/twitter.png") no-repeat center, #D5D5D5;
+}
+.footer-main-menu .networking .networking-list__item .facebook-link {
+  background: url("../images/footer/facebook.png") no-repeat center, #D5D5D5;
+}
+.footer-main-menu .networking .networking-list__item .instagram-link {
+  background: url("../images/footer/instagram.png") no-repeat center, #D5D5D5;
+}
+.footer-main-menu .networking .networking-list__item .linkedin-link {
+  background: url("../images/footer/linkedIn.svg") no-repeat center, #D5D5D5;
+}
+.footer__copirait {
+  text-align: center;
+}

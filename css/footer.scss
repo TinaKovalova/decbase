@@ -1,1 +1,95 @@
 @import "_variables", "_functions";
+
+.footer {
+  min-height: rem(473);
+  background-color: $bg-color;
+  color: $main-text-color;
+  &__container {
+    @include main-container();
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(89) rem(37) rem(69);
+    gap: vw(62);
+  }
+  &__logo {
+    flex: 0 1 vw(350);
+  }
+  &__logo-img {
+    width: rem(151);
+    height: rem(47);
+  }
+  &__description {
+    margin-top: rem(15);
+  }
+
+  &-main-menu {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    .child-menu {
+      flex: 0 1 vw(200);
+      &__title {
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: rem(24);
+        line-height: rem(40);
+        color: $title-color;
+      }
+      &__item {
+        line-height: rem(50);
+        transition: transform 0.3s;
+        &:hover {
+          transform: scale(1.05);
+          color: $btn-main-color;
+        }
+        .menu__link {
+          color: inherit;
+        }
+      }
+    }
+    .networking {
+      &__title {
+        text-align: center;
+      }
+      .networking-list {
+        display: flex;
+        gap: rem(10);
+        &__item {
+          .menu__link {
+            display: block;
+            width: rem(38);
+            height: rem(38);
+            border-radius: 50%;
+            transition: transform 0.3s;
+            &:hover {
+              background-color: $btn-main-color;
+            }
+          }
+
+          .twitter-link {
+            background: url("../images/footer/twitter.png") no-repeat center,
+              $networking-color;
+          }
+          .facebook-link {
+            background: url("../images/footer/facebook.png") no-repeat center,
+              $networking-color;
+          }
+          .instagram-link {
+            background: url("../images/footer/instagram.png") no-repeat center,
+              $networking-color;
+          }
+          .linkedin-link {
+            background: url("../images/footer/linkedIn.svg") no-repeat center,
+              $networking-color;
+          }
+        }
+      }
+    }
+  }
+  &__copirait {
+    text-align: center;
+  }
+}

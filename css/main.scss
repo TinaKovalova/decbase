@@ -357,15 +357,15 @@
 
   .stat {
     background-color: $bg-color;
-    &::after {
-      content: url("../images/stat/decor-stat.svg");
-      display: block;
-      width: vw(213);
-      height: vw(154);
-      position: absolute;
-      bottom: rem(-80);
-      left: rem(8);
-    }
+    // &::after {
+    //   content: url("../images/stat/decor-stat.svg");
+    //   display: block;
+    //   width: vw(213);
+    //   height: vw(154);
+    //   position: absolute;
+    //   bottom: rem(-80);
+    //   left: rem(8);
+    // }
     &__container {
       @include main-container();
       padding: rem(82) rem(100);
@@ -653,15 +653,15 @@
   .subscribe {
     min-height: rem(702);
     padding-top: rem(103);
-    &::after {
-      content: url("../images/subscribe/decor-subscribe.svg");
-      display: block;
-      width: vw(213);
-      height: vw(154);
-      position: absolute;
-      bottom: rem(-105);
-      left: rem(5);
-    }
+    // &::after {
+    //   content: url("../images/subscribe/decor-subscribe.svg");
+    //   display: block;
+    //   width: vw(213);
+    //   height: vw(154);
+    //   position: absolute;
+    //   bottom: rem(-105);
+    //   left: rem(5);
+    // }
     &__container {
       @include main-container();
       display: flex;
