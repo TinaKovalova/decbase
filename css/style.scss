@@ -7,14 +7,9 @@
     font-size: rem(18);
     line-height: rem(28);
     box-sizing: border-box;
-
-     
-
-
-
-
-    .wrapper {
+     .wrapper {
         min-height: 100vh;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         @import 'header', 'main', 'footer';

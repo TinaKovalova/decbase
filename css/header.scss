@@ -1,84 +1,85 @@
-@import '_fonts', '_variables', '_functions';
+@import "_fonts", "_variables", "_functions";
 
-  .header {
-    width: 100%;
-    min-height:rem(146);
-    margin-top: rem(43);
-    font-weight: 600;
-    font-size: rem(16);
-    line-height: rem(22);
-    color: $title-color;
-    background-color: #FFFFFF;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-  
-    &__container {
-        @include main-container();
-        padding: rem(94) rem(134) rem(50) rem(55);
-        display: flex;
-        align-items: center;
-        column-gap: rem(62);
-        text-align: center;
-        line-height: em(32, 16);
+.header {
+  width: 100%;
+  min-height: rem(146);
+  font-weight: 600;
+  font-size: rem(16);
+  line-height: rem(22);
+  color: $title-color;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  &__container {
+    @include main-container();
+    padding: vw(50) vw(134) vw(50) vw(55);
+    display: flex;
+    align-items: center;
+    column-gap: rem(5);
+    text-align: center;
+    line-height: rem(32);
+    @include laptop() {
+      padding-left: 0;
+      padding-right: 0;
+      width: vw($container-width + 100);
+    }
 
     .logo {
-        flex:0 0 rem(148);
-        &__img {
-           min-width: 100%;
-        }
+      flex: 0 0 rem(148);
+      &__img {
+        min-width: 100%;
+      }
     }
     .menu {
-        flex:1 1 auto;
-        text-transform: uppercase;
-           
-        &__list {
-            display: flex;
-            justify-content: flex-end;
-            column-gap: rem(10);
-            height: rem(32); 
-         
-        }
-        &__item {
-            @include main-shape(15,2);
-            padding: 0 15px;
-            transition: all 0.3s;
-            &:hover {
-                border-color: $btn-main-color;
-                .menu__link {
-                color: $btn-main-color;        
-                }
-            }     
-        }
-        &__link {
-            color: inherit;          
-        } 
-      }
-      .auth {
-        
+      flex: 1 1 auto;
+      text-transform: uppercase;
+
+      &__list {
         display: flex;
-        justify-content:flex-end;
-        align-items: center;
-        
-        &__item{
-            min-width: rem(95);
-            height: rem(32);
-            @include main-shape(15,2);
-            background-color: $btn-color;
-            text-transform: capitalize;
-            transition: all 0.3s;
-            &:hover {
-                border-color: $decor-color;
-                background-color: #FFFFFF;
-                .auth__link {
-                color: $decor-color;        
-                }
-            }
-                 
+        justify-content: flex-end;
+        column-gap: vw(10);
+        height: rem(32);
+      }
+      &__item {
+        @include main-shape(15, 2);
+        padding: 0 15px;
+        transition: all 0.3s;
+        &:hover {
+          border-color: $btn-main-color;
+          .menu__link {
+            color: $btn-main-color;
+          }
         }
-        &__link {      
-            color: #FFFFFF;
+      }
+      &__link {
+        color: inherit;
+      }
+    }
+    .auth {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &__item {
+        min-width: rem(95);
+        height: rem(32);
+        @include main-shape(15, 2);
+        background-color: $btn-color;
+        text-transform: capitalize;
+        transition: all 0.3s;
+        &:hover {
+          border-color: $decor-color;
+          background-color: #ffffff;
+          .auth__link {
+            color: $decor-color;
+          }
         }
-     }
+      }
+      &__link {
+        color: #ffffff;
+      }
     }
   }
+}

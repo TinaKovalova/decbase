@@ -11,11 +11,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: rem(89) rem(37) rem(69);
-    gap: vw(62);
+    padding: rem(89) vw(37) rem(69);
+    gap: vw(20);
   }
   &__logo {
     flex: 0 1 vw(350);
+    min-width: rem(180);
   }
   &__logo-img {
     width: rem(151);
@@ -29,8 +30,10 @@
     display: flex;
     flex: 1 1 auto;
     justify-content: space-between;
+    gap: vw(15);
     .child-menu {
-      flex: 0 1 vw(200);
+      width: rem(200);
+
       &__title {
         font-weight: 600;
         text-transform: capitalize;
@@ -91,5 +94,21 @@
   }
   &__copirait {
     text-align: center;
+  }
+  @include tablet() {
+    justify-content: center;
+    align-items: center;
+    &__logo {
+      display: none;
+    }
+    &__main-menu {
+      flex-wrap: wrap;
+    }
+  }
+  @include laptop() {
+    &__container {
+      width: vw($max-width - 100);
+      justify-content: space-between;
+    }
   }
 }

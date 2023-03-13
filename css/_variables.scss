@@ -33,7 +33,7 @@ $bg-color:#F8F8F8;
 }
 
 
-$breakpoint-desktop:rem($container-width); /*>=992 Desktop, large screens*/
-$breakpoint-laptop:rem(991.98);/*>=768 Small screens, laptop*/
-$breakpoint-tablet:rem(767.98); /*>=480 Ipads, Tablets*/
+$breakpoint-desktop:rem($container-width); /* Desktop, large screens*/
+$breakpoint-laptop:rem(1439.98);/*>=1081 Small screens, laptop*/
+$breakpoint-tablet:rem(1080.98); /*>=480 Ipads, Tablets*/
 $breakpoint-mobile:rem(479.98);/*<=480 mobile*/
