@@ -111,7 +111,7 @@
 .footer-main-menu .networking .networking-list__item .linkedin-link {
   background: url("../images/footer/linkedIn.svg") no-repeat center, #D5D5D5;
 }
-.footer__copirait {
+.footer__copyright {
   text-align: center;
 }
 @media (max-width: rem(1080.98)) {

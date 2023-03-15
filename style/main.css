@@ -260,7 +260,7 @@
 }
 .main .services .service__item {
   width: 29.375rem;
-  min-height: 10.3125rem;
+  height: 10.3125rem;
   padding: 0.625rem 1.5rem 1.875rem 2.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,6 +296,10 @@
   line-height: 3.125rem;
   color: #212121;
   text-transform: capitalize;
+  width: 18.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .main .services .service__description {
   font-weight: 400;
@@ -303,6 +307,13 @@
   line-height: 1.75rem;
   letter-spacing: -0.01em;
   color: #646464;
+  width: 19.6875rem;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  max-height: 5em;
 }
 @media (max-width: rem(1439.98)) {
   .main .services .service {
