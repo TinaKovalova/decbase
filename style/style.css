@@ -653,10 +653,16 @@ template {
   line-height: 1.75rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.page .hidden {
+  display: none;
 }
 .page .wrapper {
   min-height: 100vh;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1649,6 +1655,11 @@ template {
 .page .wrapper .main .testimonials__user-position {
   font-size: 1rem;
   line-height: 1.375rem;
+  width: 40%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .page .wrapper .main .testimonials__marks {
   -webkit-box-flex: 1;

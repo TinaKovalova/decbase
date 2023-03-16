@@ -816,6 +816,11 @@
 .main .testimonials__user-position {
   font-size: 1rem;
   line-height: 1.375rem;
+  width: 40%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .main .testimonials__marks {
   -webkit-box-flex: 1;
