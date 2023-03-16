@@ -658,9 +658,6 @@ template {
       -ms-user-select: none;
           user-select: none;
 }
-.page .hidden {
-  display: none;
-}
 .page .wrapper {
   min-height: 100vh;
   display: -webkit-box;
@@ -1538,7 +1535,7 @@ template {
   width: 80.8510638298vw;
   padding: 0 0.625em;
   margin: 0 auto;
-  padding: 8.4375rem 0.3125rem 15rem 3.125rem;
+  padding: 8.4375rem 0.3125rem 6.25rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1594,17 +1591,41 @@ template {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.page .wrapper .main .testimonials__content-wrapper {
-  margin-top: 5.3125rem;
+.page .wrapper .main .testimonials .swiper {
+  padding-top: 5.3125rem;
+  width: 90%;
+  margin: 0 auto;
+  height: 28.75rem;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 9.6875rem;
+}
+.page .wrapper .main .testimonials .swiper .swiper-button-prev, .page .wrapper .main .testimonials .swiper .swiper-button-next {
+  position: absolute;
+  top: 3.125rem;
+}
+.page .wrapper .main .testimonials .swiper .swiper-button-next {
+  right: 1.25rem;
+}
+.page .wrapper .main .testimonials .swiper .swiper-button-prev {
+  left: 80rem;
+}
+.page .wrapper .main .testimonials .swiper-button-prev, .page .wrapper .main .testimonials .swiper-button-next {
+  position: absolute;
+  top: 3.125rem;
+}
+.page .wrapper .main .testimonials .swiper-button-next {
+  right: 1.25rem;
+}
+.page .wrapper .main .testimonials .swiper-button-prev {
+  left: 9.375rem;
+}
+.page .wrapper .main .testimonials .swiper-slide {
+  padding-left: 90px;
 }
 .page .wrapper .main .testimonials__item {
   border-radius: 4.375rem 0rem;
@@ -1612,7 +1633,7 @@ template {
   border-color: transparent;
   border-style: solid;
   width: 35.6875rem;
-  min-height: 14.125rem;
+  height: 14.125rem;
   padding: 2.5rem 2.625rem 3.75rem 5.9375rem;
   background: #ffffff;
   color: #646464;

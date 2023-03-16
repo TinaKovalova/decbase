@@ -4,9 +4,20 @@ import {createServiceElement} from './functions.js'
 const copyrightYear = document.querySelector('.footer__copyright-year');
 const serviceMenu = document.querySelector('.services__menu');
 const serviceContainer = document.querySelector('.service');
-const sliderBntBlock= document.querySelector('testimonials__buttons');
-const slider = document.querySelector('.slider');
+const slider = document.querySelector('.swiper-wrapper');
 const sliderItems= slider.children;
+
+// SLIDER*******************
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 2,
+  spaceBetween:30,
+  loop:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+});
+// SLIDER*******************
 
 let services, posts;
 let users;
@@ -74,13 +85,7 @@ serviceMenu.addEventListener('click',(event)=>{
   } 
 
 })
-sliderBntBlock.addEventListener('click', (event)=>{
-const {target}=event;
 
-  if(target.closest('.btn-left') || target.closest('.btn-left')){
-
-  }
-})
 
 
 
@@ -88,6 +93,7 @@ const {target}=event;
 
 
 copyrightYear.textContent = new Date().getFullYear();
+
 
 
 
