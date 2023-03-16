@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.main .subscribe__btn:hover, .main .news__btn:hover, .main .testimonials__btn:hover, .main .shop__container .content-shop__btn:hover, .main .about__container .content-about__btn:hover, .main .services__btn:hover, .main .project__container .content__btn:hover {
+.main .subscribe__btn:hover, .main .news__btn:hover, .main .testimonials__btn:hover, .main .shop__container .content-shop__btn:hover, .main .about__container .content-about__btn:hover, .main .project__container .content__btn:hover {
   border-color: #37806B;
   color: #37806B;
   background-color: #ffffff;
@@ -40,7 +40,7 @@
   text-align: center;
 }
 
-.main .subscribe__btn:hover, .main .news__btn:hover, .main .testimonials__btn:hover, .main .shop__container .content-shop__btn:hover, .main .about__container .content-about__btn:hover, .main .services__btn:hover, .main .project__container .content__btn:hover {
+.main .subscribe__btn:hover, .main .news__btn:hover, .main .testimonials__btn:hover, .main .shop__container .content-shop__btn:hover, .main .about__container .content-about__btn:hover, .main .project__container .content__btn:hover {
   border-color: #37806B;
   color: #37806B;
   background-color: #ffffff;
@@ -617,9 +617,9 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-column-gap: 11.875rem;
-     -moz-column-gap: 11.875rem;
-          column-gap: 11.875rem;
+  -webkit-column-gap: 13%;
+     -moz-column-gap: 13%;
+          column-gap: 13%;
   margin-top: 5.4375rem;
   min-height: 17.375rem;
 }
@@ -640,7 +640,8 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 11.5625rem;
           flex: 0 1 11.5625rem;
-  min-height: 11.375rem;
+  min-width: 9.375rem;
+  height: 11.375rem;
   border-radius: 2.5rem 0rem;
   border-width: 0.125rem;
   border-color: transparent;
@@ -649,7 +650,7 @@
   -webkit-box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 5;
+  z-index: 3;
 }
 .main .stat__container .data__item:nth-child(even) {
   -ms-flex-item-align: self-end;
@@ -663,7 +664,7 @@
   position: absolute;
   left: -120%;
   top: -2%;
-  z-index: 1;
+  z-index: -3;
 }
 .main .stat__container .data__item:nth-child(even):not(:last-child):after {
   content: url("../images/stat/Vector2.svg");
@@ -673,7 +674,7 @@
   position: absolute;
   right: -120%;
   bottom: 50%;
-  z-index: 1;
+  z-index: -3;
 }
 .main .stat__container .data__count {
   font-weight: 700;
@@ -686,6 +687,13 @@
   text-transform: capitalize;
   font-weight: 700;
   line-height: 1.875rem;
+}
+@media (max-width: rem(1439.98)) {
+  .main .stat__container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 86.170212766vw;
+  }
 }
 @media (max-width: rem(1080.98)) {
   .main .stat {

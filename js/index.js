@@ -1,5 +1,5 @@
 import {getServices, getPosts, getUsers} from "./fetches.js";
-import {createServiceElement} from './functions.js'
+import {createServiceElement, setBtnStyle} from './functions.js'
 
 const copyrightYear = document.querySelector('.footer__copyright-year');
 const serviceMenu = document.querySelector('.services__menu');
@@ -31,7 +31,20 @@ const swiper = new Swiper(".swiper", {
 
 let services, posts;
 let users;
+let activeServiceFilterBTN;
 
+const btnStyle={
+  activeStyle:{
+    borderColor: '#37806B',
+      color: '#37806B',
+      backgroundColor: '#ffffff'
+  },
+  inactiveStyle: {
+    borderColor: '#ffffff',
+     color: '#ffffff',
+     backgroundColor: '#37806B'
+ }
+}
 
 
 getServices().then(result=>{
@@ -82,9 +95,12 @@ getUsers().then(result=>{
 
 
 serviceMenu.addEventListener('click',(event)=>{
-
-  const {target} = event;
-  console.log(target)
+    const {target} = event;
+  if(activeServiceFilterBTN){
+    setBtnStyle(activeServiceFilterBTN, btnStyle.inactiveStyle);
+  }
+  activeServiceFilterBTN=target;
+  setBtnStyle(target, btnStyle.activeStyle);
   if(target.closest('.services__btn') ){
     serviceContainer.innerHTML='';
     let data = target.value == 0 ? Object.values(services).map(item=>item[0]) : services[target.value];  

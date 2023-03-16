@@ -11,8 +11,12 @@ function createServiceElement (categoryId, title, description){
            </div>`;
   }
 
-   
+  function setBtnStyle(target, {backgroundColor, borderColor, color}){
+    target.style.backgroundColor = backgroundColor;
+    target.style.borderColor = borderColor;
+    target.style.color = color;
+  } 
 
  
-  export  {createServiceElement};
+  export  {createServiceElement, setBtnStyle};
   
