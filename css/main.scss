@@ -577,7 +577,7 @@
      
     .swiper{
       padding-top:rem(85);
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
       height: rem(460);
       position: relative;
@@ -591,33 +591,29 @@
         right: rem(20);
       }
       .swiper-button-prev{
-       left: rem(1280);
+        left:auto;
+        right: rem(100);
       }
     }
    
-    .swiper-button-prev,.swiper-button-next {
-      position: absolute;
-      top:rem(50);
-    }
-    .swiper-button-next{
-      right: rem(20);
-    }
-    .swiper-button-prev{
-     left: rem(150);
-    }
     .swiper-slide{
       padding-left: 90px;
+      
     }
    
     &__item {
       @include main-shape(70, 0);
-      width: rem(571);
-      height: rem(226);
+      width: vw(571);
+      min-height: rem(226);
       padding: rem(40) rem(42) rem(60) rem(95);
       background: #ffffff;
       color: $main-text-color;
       box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
       position: relative;
+      @include desktop(){
+        width: 100%;
+      }
+      
     }
     &__avatar {
       position: absolute;
@@ -638,7 +634,7 @@
     &__user-name {
       color: $title-color;
       font-weight: 700;
-      font-size: rem(24);
+      font-size: vw(24);
       line-height: rem(33);
       margin-top: rem(3);
     }

@@ -1593,7 +1593,7 @@ template {
 }
 .page .wrapper .main .testimonials .swiper {
   padding-top: 5.3125rem;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   height: 28.75rem;
   position: relative;
@@ -1612,17 +1612,8 @@ template {
   right: 1.25rem;
 }
 .page .wrapper .main .testimonials .swiper .swiper-button-prev {
-  left: 80rem;
-}
-.page .wrapper .main .testimonials .swiper-button-prev, .page .wrapper .main .testimonials .swiper-button-next {
-  position: absolute;
-  top: 3.125rem;
-}
-.page .wrapper .main .testimonials .swiper-button-next {
-  right: 1.25rem;
-}
-.page .wrapper .main .testimonials .swiper-button-prev {
-  left: 9.375rem;
+  left: auto;
+  right: 6.25rem;
 }
 .page .wrapper .main .testimonials .swiper-slide {
   padding-left: 90px;
@@ -1632,14 +1623,19 @@ template {
   border-width: 0rem;
   border-color: transparent;
   border-style: solid;
-  width: 35.6875rem;
-  height: 14.125rem;
+  width: 30.3723404255vw;
+  min-height: 14.125rem;
   padding: 2.5rem 2.625rem 3.75rem 5.9375rem;
   background: #ffffff;
   color: #646464;
   -webkit-box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
           box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
   position: relative;
+}
+@media (max-width: 95rem) {
+  .page .wrapper .main .testimonials__item {
+    width: 100%;
+  }
 }
 .page .wrapper .main .testimonials__avatar {
   position: absolute;
@@ -1669,7 +1665,7 @@ template {
 .page .wrapper .main .testimonials__user-name {
   color: #212121;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.2765957447vw;
   line-height: 2.0625rem;
   margin-top: 0.1875rem;
 }
