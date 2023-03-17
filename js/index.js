@@ -1,33 +1,16 @@
 import {getServices, getPosts, getUsers} from "./fetches.js";
-import {createServiceElement, setBtnStyle} from './functions.js'
+import {createServiceElement, setBtnStyle, checkSubscribeName, checkSubscribeEmail} from './functions.js'
+
 
 const copyrightYear = document.querySelector('.footer__copyright-year');
 const serviceMenu = document.querySelector('.services__menu');
 const serviceContainer = document.querySelector('.service');
 const slider = document.querySelector('.swiper-wrapper');
+const subscribeForm = document.querySelector('.subscribe__form');
+const subscribeBtn = subscribeForm.elements.button;
 const sliderItems= slider.children;
 
-// SLIDER*******************
-const swiper = new Swiper(".swiper", {
- 
-  spaceBetween:10,
-  loop:true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints:{
-    0: {
-      slidesPerView: 1,
-      direction:'horizontal',
-    },
-    1500: {
-      slidesPerView: 2,
-      direction:'horizontal'
-    }
-  }
-});
-// SLIDER*******************
+
 
 let services, posts;
 let users;
@@ -36,13 +19,13 @@ let activeServiceFilterBTN;
 const btnStyle={
   activeStyle:{
     borderColor: '#37806B',
-      color: '#37806B',
-      backgroundColor: '#ffffff'
+    color: '#37806B',
+    backgroundColor: '#ffffff'
   },
   inactiveStyle: {
     borderColor: '#ffffff',
-     color: '#ffffff',
-     backgroundColor: '#37806B'
+    color: '#ffffff',
+    backgroundColor: '#37806B'
  }
 }
 
@@ -59,7 +42,7 @@ getUsers().then(result=>{
   return users=[...result];
  
 }).then((users)=>{
-  console.log('users',users)
+  // console.log('users',users)
   getPosts().then(result=>{
     posts= [...result].reduce((res, item)=>{
       if(!(item.userId in res)){
@@ -73,14 +56,14 @@ getUsers().then(result=>{
       } else return res;
     }, {});
     
-    console.log('posts', posts)
+    // console.log('posts', posts)
     return posts
   }).then((posts)=>{
     Array.from(sliderItems).forEach((item, index)=>{
       
       let{userName, position,body, userId}={...posts[index+1]}
       item.dataset.index=userId;
-      console.log(userName, position,body)
+      // console.log(userName, position,body)
       item.querySelector('.testimonials__user-name').textContent=userName;
       item.querySelector('.testimonials__user-position').textContent=position;
       item.querySelector('.testimonials__text').textContent=body;
@@ -112,6 +95,31 @@ serviceMenu.addEventListener('click',(event)=>{
 
 })
 
+subscribeForm.addEventListener('submit', (event)=>{
+  event.preventDefault();
+  const {username, surname, email } = subscribeForm.elements;
+  const checkedData = {
+    name:false,
+    surname:false,
+    email:false
+  }
+
+  checkSubscribeName(username.value, 'name')?  checkedData.name=true : checkedData.name=false;
+ if(!checkedData.name) {
+
+  let error = document.querySelector('.subscribe__username-lable')
+  if(!error.matches('.error-visible')){
+    error.classList.add('error-visible');
+  }
+}
+// if(!checkSubscribeName(surname.value, 'name')) {
+//   surname.classList.toggle('error')
+// }
+// if(!checkSubscribeEmail(email.value, 'email')) {
+//   email.classList.toggle('error')
+// }
+
+})
 
 
 

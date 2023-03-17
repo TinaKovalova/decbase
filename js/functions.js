@@ -17,6 +17,16 @@ function createServiceElement (categoryId, title, description){
     target.style.color = color;
   } 
 
+  function checkSubscribeName( dataString){
+    const regexpName = /^[A-Z][a-z]*$/g;
+    return regexpName.test(dataString);
+  }
+
+  function checkSubscribeEmail( dataString){
+    const regexpEmail = /\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}/gi;
+    return regexpEmail.test(dataString);
+  }
+
  
-  export  {createServiceElement, setBtnStyle};
+  export  {createServiceElement, setBtnStyle, checkSubscribeName, checkSubscribeEmail};
   

@@ -349,16 +349,23 @@
           <section class="subscribe" id="contacts">
             <div class="subscribe__container">
               <div class="subscribe__map" id ='location'></div>
-              <form action="#" class="subscribe__form">
+              <form action="#" class="subscribe__form" >
                 <h2 class="subscribe__form-title">DON’T FORGET TO SIGN UP</h2>
                 <p class="subscribe__form-info">Find out early about all upcoming promotions and new product releases with
                   our newsletter.</p>
                 <div class="subscribe__user-data">
-                  <input type="text" name="name" class="subscribe__user-name" placeholder="Enter your name....." required>
+                  <div class="subscribe__user-field">
+                    <input type="text" id="username" name="username" class="subscribe__user-name" placeholder="Enter your name....." required>
+                    <label for="username" class="subscribe__username-lable">Invalid data</label>
+                  </div>
+                 <div class="subscribe__user-field">
                   <input type="text" name="surname" class="subscribe__user-surname" placeholder="Enter your surname....." required>
+                  <label for="username" class="subscribe__surname-lable">Invalid data</label>
+                 </div>
+                 
                 </div>
                 <input type="email" name="email" class="subscribe__user-email" placeholder="Enter your e-mail....." required>
-                <input type="submit" class="subscribe__btn" value="subscribe">
+                <input type="submit" name="button" class="subscribe__btn" value="subscribe">
               </form>
             </div>
           </section>
@@ -458,8 +465,9 @@
           </div>
         </footer>
        <script type="module" src="js/swiper-bundle.min.js"></script>
-       <script async defer src="https://maps.googleapis.com/maps/api/js?v=weekly&key=AIzaSyAhfzQiFpHDOvabVOCie6ruW_dHqfTvQbA&callback=initMap"></script>
-       <script src="js/googleMap.js"></script>
+       <script type="module" src="js/swiper.js"></script>
+       <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?v=weekly&key=AIzaSyAhfzQiFpHDOvabVOCie6ruW_dHqfTvQbA&callback=initMap"></script>
+       <script src="js/googleMap.js"></script> -->
       <script type="module" src="js/index.js"></script>
         
     </div>

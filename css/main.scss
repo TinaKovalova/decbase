@@ -844,11 +844,34 @@
     &__user-name,
     &__user-surname {
       flex: 0 1 rem(328);
+      max-height: 3em;
+      position: relative;
+      
     }
     &__user-email {
       flex: 1 1 auto;
       min-width: 100%;
+      max-height: 3em;
       margin-top: rem(59);
+      display: flex;
+    
+    }
+    &__user-field{
+      display: flex;
+      flex-direction: column;
+    }
+    &__username-lable, &__surname-lable{
+      visibility: hidden;
+    }
+
+    &__username-lable.error-visible, &__surname-lable.error-visible{
+      visibility: visible;
+      margin-top: 10px;
+      color: #ff0000;
+      font-weight: 500;
+      font-family: 'Poppins', serif;
+      padding-left: 20px;
+      font-size: 0.7em;
     }
 
     &__btn {
