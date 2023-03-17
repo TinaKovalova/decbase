@@ -348,6 +348,7 @@
           </section>
           <section class="subscribe" id="contacts">
             <div class="subscribe__container">
+              <div class="subscribe__map" id ='location'></div>
               <form action="#" class="subscribe__form">
                 <h2 class="subscribe__form-title">DON’T FORGET TO SIGN UP</h2>
                 <p class="subscribe__form-info">Find out early about all upcoming promotions and new product releases with
@@ -457,7 +458,9 @@
           </div>
         </footer>
        <script type="module" src="js/swiper-bundle.min.js"></script>
-        <script type="module" src="js/index.js"></script>
+       <script async defer src="https://maps.googleapis.com/maps/api/js?v=weekly&key=AIzaSyAhfzQiFpHDOvabVOCie6ruW_dHqfTvQbA&callback=initMap"></script>
+       <script src="js/googleMap.js"></script>
+      <script type="module" src="js/index.js"></script>
         
     </div>
 </body>

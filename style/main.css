@@ -999,12 +999,27 @@
   width: 80.8510638298vw;
   padding: 0 0.625em;
   margin: 0 auto;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .subscribe__map {
+  width: 50%;
+  height: 21.875rem;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  background-color: aquamarine;
+  background-color: rgb(230, 224, 224);
+  -webkit-box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
 }
 .main .subscribe__form {
   -webkit-box-flex: 0;
