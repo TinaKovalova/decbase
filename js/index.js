@@ -1,5 +1,5 @@
 import {getServices, getPosts, getUsers} from "./fetches.js";
-import {createServiceElement, setBtnStyle, checkSubscribeName, checkSubscribeEmail} from './functions.js'
+import {createServiceElement, setBtnStyle, checkFormFieldData} from './functions.js'
 
 
 const copyrightYear = document.querySelector('.footer__copyright-year');
@@ -99,29 +99,25 @@ subscribeForm.addEventListener('submit', (event)=>{
   event.preventDefault();
   const {username, surname, email } = subscribeForm.elements;
   const checkedData = {
-    name:false,
+    username:false,
     surname:false,
     email:false
   }
+  checkedData.username = checkFormFieldData(username,"Only letters a-b. Use lowercase letters, capitalize only the first letter.");
+  checkedData.surname = checkFormFieldData(surname,"Only letters a-b. Use lowercase letters, capitalize only the first letter.");
+  checkedData.email = checkFormFieldData(email,"Invalid email. Valid format : example@email.com ");
+  // console.log({checkedData})
+  // console.log(Object.values(checkedData).every(item => item == false))
 
-  checkSubscribeName(username.value, 'name')?  checkedData.name=true : checkedData.name=false;
- if(!checkedData.name) {
-
-  let error = document.querySelector('.subscribe__username-lable')
-  if(!error.matches('.error-visible')){
-    error.classList.add('error-visible');
+  if (Object.values(checkedData).every(item => item == true)){
+    localStorage.setItem('userName', username.value);
+    localStorage.setItem('userSurame', surname.value);
+    localStorage.setItem('userEmail', email.value);
+    // console.log('save')
+    subscribeForm.reset();
   }
-}
-// if(!checkSubscribeName(surname.value, 'name')) {
-//   surname.classList.toggle('error')
-// }
-// if(!checkSubscribeEmail(email.value, 'email')) {
-//   email.classList.toggle('error')
-// }
-
-})
-
-
+ 
+});
 
 
 

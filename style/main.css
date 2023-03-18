@@ -1087,37 +1087,35 @@
   max-height: 3em;
   position: relative;
 }
+.main .subscribe .input-wrapper.error {
+  position: relative;
+}
+.main .subscribe .input-wrapper.error > input {
+  -webkit-box-shadow: -1px 3px 10px red;
+          box-shadow: -1px 3px 10px red;
+}
+.main .subscribe .input-wrapper.error::after {
+  content: attr(data-value);
+  display: inline-block;
+  width: 100%;
+  line-height: 1em;
+  color: #ff0000;
+  font-size: 0.7em;
+  font-style: italic;
+  position: absolute;
+  left: 2em;
+  bottom: -2.5em;
+}
+.main .subscribe .input-wrapper.user-email {
+  min-width: 100%;
+}
 .main .subscribe__user-email {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   min-width: 100%;
   max-height: 3em;
   margin-top: 3.6875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.main .subscribe__user-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.main .subscribe__username-lable, .main .subscribe__surname-lable {
-  visibility: hidden;
-}
-.main .subscribe__username-lable.error-visible, .main .subscribe__surname-lable.error-visible {
-  visibility: visible;
-  margin-top: 10px;
-  color: #ff0000;
-  font-weight: 500;
-  font-family: "Poppins", serif;
-  padding-left: 20px;
-  font-size: 0.7em;
 }
 .main .subscribe__btn {
   margin-top: 5.75rem;

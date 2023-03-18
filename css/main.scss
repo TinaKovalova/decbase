@@ -848,32 +848,36 @@
       position: relative;
       
     }
+    .input-wrapper.error {
+      position: relative;
+      & > input{
+        box-shadow: -1px 3px 10px red;
+      }
+      &::after{
+        content: attr(data-value);
+        display: inline-block;
+        width: 100%;
+        line-height: 1em;
+        color: #ff0000;
+        font-size: 0.7em;
+        font-style: italic;
+        position: absolute;
+        left: 2em;
+        bottom: -2.5em;
+      }
+    }
+    .input-wrapper.user-email{
+      min-width: 100%;
+    }
     &__user-email {
-      flex: 1 1 auto;
+      
       min-width: 100%;
       max-height: 3em;
       margin-top: rem(59);
       display: flex;
     
     }
-    &__user-field{
-      display: flex;
-      flex-direction: column;
-    }
-    &__username-lable, &__surname-lable{
-      visibility: hidden;
-    }
-
-    &__username-lable.error-visible, &__surname-lable.error-visible{
-      visibility: visible;
-      margin-top: 10px;
-      color: #ff0000;
-      font-weight: 500;
-      font-family: 'Poppins', serif;
-      padding-left: 20px;
-      font-size: 0.7em;
-    }
-
+   
     &__btn {
       margin-top: rem(92);
       min-width: vw(180);

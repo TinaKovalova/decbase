@@ -27,6 +27,22 @@ function createServiceElement (categoryId, title, description){
     return regexpEmail.test(dataString);
   }
 
+  
+function checkFormFieldData(element, errorText){
+  let elementName = element.name;
+  let isValid;
+  const addParetStyle = (parent)=>{
+   parent.classList.add('error');
+   parent.setAttribute('data-value',errorText);
+  }
+  const removeParentStyle = (parent) =>parent.classList.remove('error');
  
-  export  {createServiceElement, setBtnStyle, checkSubscribeName, checkSubscribeEmail};
+  isValid = elementName.includes('name') ? checkSubscribeName(element.value): checkSubscribeEmail(element.value);
+  isValid ? removeParentStyle(element.parentNode): addParetStyle(element.parentNode);
+  return isValid;
+}
+
+
+ 
+  export  {createServiceElement, setBtnStyle, checkFormFieldData};
   
