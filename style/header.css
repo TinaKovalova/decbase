@@ -126,3 +126,26 @@
 .header__container .auth__link {
   color: #ffffff;
 }
+.header .progress {
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 0.5rem;
+}
+.header .progress__container {
+  width: 80.8510638298vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  margin: 0 auto;
+  height: 0.5em;
+}
+.header .progress__rate {
+  width: 0%;
+  height: 100%;
+  border-radius: 1.25rem 0rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  border-style: solid;
+  background: rgb(120, 233, 195);
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(120, 233, 195, 0.6)), color-stop(38%, rgba(0, 190, 129, 0.6)), color-stop(65%, rgba(68, 154, 129, 0.6)), to(rgba(52, 108, 67, 0.6)));
+  background: linear-gradient(90deg, rgba(120, 233, 195, 0.6) 2%, rgba(0, 190, 129, 0.6) 38%, rgba(68, 154, 129, 0.6) 65%, rgba(52, 108, 67, 0.6) 100%);
+}

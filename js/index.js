@@ -1,5 +1,5 @@
 import {getServices, getPosts, getUsers} from "./fetches.js";
-import {createServiceElement, setBtnStyle, checkFormFieldData,showDiscount, closePopUp,checkInactivity} from './functions.js'
+import {createServiceElement, setBtnStyle, checkFormFieldData,showDiscount, closePopUp,checkInactivity, trackDocumentScroll} from './functions.js'
 
 
 const copyrightYear = document.querySelector('.footer__copyright-year');
@@ -9,6 +9,7 @@ const slider = document.querySelector('.swiper-wrapper');
 const subscribeForm = document.querySelector('.subscribe__form');
 const sliderItems= slider.children;
 const popupBlock = document.querySelector('.popup');
+const progress = document.querySelector('.progress__rate');
 
 let services, posts;
 let users;
@@ -128,8 +129,7 @@ popupBlock.addEventListener('click', (event)=> closePopUp(event.target));
 copyrightYear.textContent = new Date().getFullYear();
 checkInactivity();
 
-
-
+window.addEventListener('scroll', (event)=>progress.style.width = trackDocumentScroll());
 
 
 

@@ -82,4 +82,22 @@
       }
     }
   }
+  
+  .progress {
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 0.5rem;
+    &__container {
+      @include main-container();
+      margin: 0 auto;
+      height: 0.5em;
+    }
+    &__rate {
+      width: 0%;
+      height: 100%;
+      @include main-shape(20,2);
+      background: rgb(120,233,195);
+      background: linear-gradient(90deg, rgba(120,233,195,0.6) 2%, rgba(0,190,129,0.6) 38%, rgba(68,154,129,0.6) 65%, rgba(52,108,67,0.6) 100%);
+    }
+  }
 }

@@ -88,6 +88,11 @@ function checkInactivity() {
   document.documentElement.addEventListener("touchstart", setNewTimer);
 }
 
+function trackDocumentScroll(){
+  const documentHeight = window.document.documentElement.scrollHeight;
+  return `${window.pageYOffset/documentHeight*100}%`; 
+}
+
  
- export  {createServiceElement, setBtnStyle, checkFormFieldData, showDiscount, closePopUp,checkInactivity };
+ export  {createServiceElement, setBtnStyle, checkFormFieldData, showDiscount, closePopUp,checkInactivity, trackDocumentScroll };
   

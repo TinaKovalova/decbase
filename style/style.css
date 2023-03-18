@@ -850,6 +850,29 @@ template {
 .page .wrapper .header__container .auth__link {
   color: #ffffff;
 }
+.page .wrapper .header .progress {
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 0.5rem;
+}
+.page .wrapper .header .progress__container {
+  width: 80.8510638298vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  margin: 0 auto;
+  height: 0.5em;
+}
+.page .wrapper .header .progress__rate {
+  width: 0%;
+  height: 100%;
+  border-radius: 1.25rem 0rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  border-style: solid;
+  background: rgb(120, 233, 195);
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(120, 233, 195, 0.6)), color-stop(38%, rgba(0, 190, 129, 0.6)), color-stop(65%, rgba(68, 154, 129, 0.6)), to(rgba(52, 108, 67, 0.6)));
+  background: linear-gradient(90deg, rgba(120, 233, 195, 0.6) 2%, rgba(0, 190, 129, 0.6) 38%, rgba(68, 154, 129, 0.6) 65%, rgba(52, 108, 67, 0.6) 100%);
+}
 .page .wrapper .main .popup .passive, .page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
