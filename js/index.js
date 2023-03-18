@@ -1,5 +1,5 @@
 import {getServices, getPosts, getUsers} from "./fetches.js";
-import {createServiceElement, setBtnStyle, checkFormFieldData} from './functions.js'
+import {createServiceElement, setBtnStyle, checkFormFieldData,showDiscount, closePopUp} from './functions.js'
 
 
 const copyrightYear = document.querySelector('.footer__copyright-year');
@@ -9,8 +9,7 @@ const slider = document.querySelector('.swiper-wrapper');
 const subscribeForm = document.querySelector('.subscribe__form');
 const subscribeBtn = subscribeForm.elements.button;
 const sliderItems= slider.children;
-
-
+const popupBlock = document.querySelector('.popup');
 
 let services, posts;
 let users;
@@ -114,12 +113,17 @@ subscribeForm.addEventListener('submit', (event)=>{
     localStorage.setItem('userSurame', surname.value);
     localStorage.setItem('userEmail', email.value);
     // console.log('save')
+    showDiscount(username.value);
     subscribeForm.reset();
+    
   }
+
+
+ 
  
 });
 
-
+popupBlock.addEventListener('click', (event)=> closePopUp(event.target));
 
 
 copyrightYear.textContent = new Date().getFullYear();

@@ -804,6 +804,7 @@
       align-items: center;
       min-height: rem(503);
       color: $main-text-color;
+    
     }
     &__form-title {
       @extend %title-font-style;
@@ -820,6 +821,8 @@
         margin: rem(40) auto;
       }
     }
+    
+ 
     &__form-info {
       max-width: vw(646);
       text-align: center;
@@ -840,7 +843,11 @@
       font-weight: 500;
       display: inline-block;
       padding: 0 rem(30);
+      &:required:hover {
+        box-shadow:-1px 3px 10px rgb(155, 150, 149);
+      }
     }
+   
     &__user-name,
     &__user-surname {
       flex: 0 1 rem(328);
@@ -851,14 +858,14 @@
     .input-wrapper.error {
       position: relative;
       & > input{
-        box-shadow: -1px 3px 10px red;
+        box-shadow: -1px 3px 10px $error-color;
       }
       &::after{
         content: attr(data-value);
         display: inline-block;
         width: 100%;
         line-height: 1em;
-        color: #ff0000;
+        color: $error-color;
         font-size: 0.7em;
         font-style: italic;
         position: absolute;
@@ -889,6 +896,84 @@
       transition: all 0.3s;
       &:hover {
         @extend %green-btn-hover-style;
+      }
+    }
+  
+  }
+  
+  .popup {
+
+    .hidden {
+      visibility: hidden;
+    }
+    &__container {
+      @include main-container();
+      
+    }
+   
+    .close{
+      width: 0.7em;
+      height: 0.7em;
+      position: absolute;
+     
+      &:hover{
+        transform: scale(1.2);
+      }
+      &::before, &::after{
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 3px;
+        background-color: $main-text-color;
+      }
+      &::before{
+      
+        transform: rotate(45deg);
+      }
+      &::after{
+      
+        transform: rotate(-45deg);
+      }
+    }
+    
+    
+   
+    .discount {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(127, 255, 212, 0.3);
+      @extend %main-text-style;
+      font-weight: 700;
+      font-size: rem(30);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 25;
+      &__content {
+        width: 30%;
+        height: fit-content;
+        padding: rem(50);
+        color: $title-color;
+        margin: 0 auto;
+        margin-top: 30vh;
+        background-color: #eeeeee;
+        position: relative;
+        @include main-shape(20, 2);
+        box-shadow:-1px 3px 10px $btn-main-color;
+        & .close{
+          top: rem(20);
+          right: rem(15);
+        }
+      }
+     
+        
+      &__text {
+     
+      }
+      &__date {
       }
     }
   }

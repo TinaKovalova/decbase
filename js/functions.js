@@ -43,6 +43,22 @@ function checkFormFieldData(element, errorText){
 }
 
 
+function showDiscount(userName){
+  const discountPopUp = document.querySelector('.discount');
+  const discountDate = discountPopUp.querySelector('.discount__date');
+  const discountUserName = discountPopUp.querySelector('.discount__user-name');
+  const date = new Date();
+  discountDate.textContent = `${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}`;
+  discountUserName.textContent = userName;
+  discountPopUp.classList.remove('hidden');
+}
+
+function closePopUp(element){
+  console.log(element ,element.dataset.target )
+  element.closest(`.${element.dataset.target}`)?.classList.add('hidden');
+}
+
+
  
-  export  {createServiceElement, setBtnStyle, checkFormFieldData};
+ export  {createServiceElement, setBtnStyle, checkFormFieldData, showDiscount, closePopUp};
   

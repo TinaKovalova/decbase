@@ -1,6 +1,7 @@
 @import '_fonts', '_variables', '_functions';
 @import '_reset';
 
+
 .page{
     @extend %main-text-style;
     font-weight: 400;
@@ -8,6 +9,7 @@
     line-height: rem(28);
     box-sizing: border-box;
     user-select: none;
+    
       
      .wrapper {
         min-height: 100vh;

@@ -349,7 +349,7 @@
           <section class="subscribe" id="contacts">
             <div class="subscribe__container">
               <div class="subscribe__map" id ='location'></div>
-              <form action="#" class="subscribe__form" >
+              <form action="#" class="subscribe__form" method="post" >
                 <h2 class="subscribe__form-title">DON’T FORGET TO SIGN UP</h2>
                 <p class="subscribe__form-info">Find out early about all upcoming promotions and new product releases with
                   our newsletter.</p>
@@ -366,6 +366,23 @@
                 </div>
                 <input type="submit" name="button" class="subscribe__btn" value="subscribe">
               </form>
+            </div>
+          </section>
+          <section class="popup ">
+            <div  class="popup__container ">
+              <div class="popup__discount discount hidden">
+                <div class="discount__content">
+                  <div class="discount__close close" data-target="discount"></div>
+                     <p class="discount__text ">
+                     саме сьогодні 
+                     <span class="discount__date"></span>
+                      для користувачів з імʼям 
+                      <span class="discount__user-name"></span>
+                       при оформленні замовлення знижка 120% 
+                  </p>
+                </div>
+              
+              </div>
             </div>
           </section>
         </main>
@@ -463,6 +480,7 @@
             </p>
           </div>
         </footer>
+        
        <script type="module" src="js/swiper-bundle.min.js"></script>
        <script type="module" src="js/swiper.js"></script>
        <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?v=weekly&key=AIzaSyAhfzQiFpHDOvabVOCie6ruW_dHqfTvQbA&callback=initMap"></script>
