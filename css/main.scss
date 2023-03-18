@@ -196,7 +196,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-       
       }
       &__description {
         font-weight: 400;
@@ -207,10 +206,10 @@
         width: rem(315);
         word-wrap: break-word;
         overflow: hidden;
-        display: -webkit-box; 
+        display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
-        max-height: 5em;        
+        max-height: 5em;
       }
     }
     @include laptop() {
@@ -458,7 +457,6 @@
         white-space: pre-line;
       }
       .data {
-        
         display: flex;
         align-items: flex-start;
         column-gap: 13%;
@@ -518,10 +516,10 @@
       }
     }
     @include laptop() {
-      &__container{
+      &__container {
         padding-left: 0;
-            padding-right: 0;
-            width: vw($container-width + 100);
+        padding-right: 0;
+        width: vw($container-width + 100);
       }
     }
     @include tablet() {
@@ -579,34 +577,33 @@
         @extend %green-btn-hover-style;
       }
     }
-    
-     
-    .swiper{
-      padding-top:rem(85);
+
+    .swiper {
+      padding-top: rem(85);
       width: 100%;
       margin: 0 auto;
       height: rem(460);
       position: relative;
       display: flex;
       justify-content: center;
-      .swiper-button-prev,.swiper-button-next {
+      .swiper-button-prev,
+      .swiper-button-next {
         position: absolute;
-        top:rem(50);
+        top: rem(50);
       }
-      .swiper-button-next{
+      .swiper-button-next {
         right: rem(20);
       }
-      .swiper-button-prev{
-        left:auto;
+      .swiper-button-prev {
+        left: auto;
         right: rem(100);
       }
     }
-   
-    .swiper-slide{
+
+    .swiper-slide {
       padding-left: 90px;
-      
     }
-   
+
     &__item {
       @include main-shape(70, 0);
       width: vw(571);
@@ -616,10 +613,9 @@
       color: $main-text-color;
       box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
       position: relative;
-      @include desktop(){
+      @include desktop() {
         width: 100%;
       }
-      
     }
     &__avatar {
       position: absolute;
@@ -787,13 +783,13 @@
       flex-direction: column;
       align-items: center;
     }
-    &__map{
+    &__map {
       width: 50%;
-      height:rem(350);
+      height: rem(350);
       margin-bottom: 100px;
       border-radius: 15px;
       background-color: aquamarine;
-      background-color:rgb(230, 224, 224);
+      background-color: rgb(230, 224, 224);
       box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
     }
     &__form {
@@ -804,7 +800,6 @@
       align-items: center;
       min-height: rem(503);
       color: $main-text-color;
-    
     }
     &__form-title {
       @extend %title-font-style;
@@ -821,8 +816,7 @@
         margin: rem(40) auto;
       }
     }
-    
- 
+
     &__form-info {
       max-width: vw(646);
       text-align: center;
@@ -844,23 +838,22 @@
       display: inline-block;
       padding: 0 rem(30);
       &:required:hover {
-        box-shadow:-1px 3px 10px rgb(155, 150, 149);
+        box-shadow: -1px 3px 10px rgb(155, 150, 149);
       }
     }
-   
+
     &__user-name,
     &__user-surname {
       flex: 0 1 rem(328);
       max-height: 3em;
       position: relative;
-      
     }
     .input-wrapper.error {
       position: relative;
-      & > input{
+      & > input {
         box-shadow: -1px 3px 10px $error-color;
       }
-      &::after{
+      &::after {
         content: attr(data-value);
         display: inline-block;
         width: 100%;
@@ -873,18 +866,16 @@
         bottom: -2.5em;
       }
     }
-    .input-wrapper.user-email{
+    .input-wrapper.user-email {
       min-width: 100%;
     }
     &__user-email {
-      
       min-width: 100%;
       max-height: 3em;
       margin-top: rem(59);
       display: flex;
-    
     }
-   
+
     &__btn {
       margin-top: rem(92);
       min-width: vw(180);
@@ -898,53 +889,47 @@
         @extend %green-btn-hover-style;
       }
     }
-  
   }
-  
-  .popup {
 
+  .popup {
     .hidden {
       visibility: hidden;
     }
     &__container {
       @include main-container();
-      
     }
-   
-    .close{
+
+    .close {
       width: 0.7em;
       height: 0.7em;
       position: absolute;
-     
-      &:hover{
+
+      &:hover {
         transform: scale(1.2);
       }
-      &::before, &::after{
-        content: '';
+      &::before,
+      &::after {
+        content: "";
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         display: inline-block;
         width: 100%;
         height: 3px;
         background-color: $main-text-color;
       }
-      &::before{
-      
+      &::before {
         transform: rotate(45deg);
       }
-      &::after{
-      
+      &::after {
         transform: rotate(-45deg);
       }
     }
-    
-    
-   
+
     .discount {
       width: 100%;
       height: 100vh;
-      background-color: #7fffd44d;
+      background-color: rgba(127, 255, 212, 0.2);
       @extend %title-font-style;
       font-weight: 700;
       font-size: rem(30);
@@ -963,59 +948,98 @@
         background-color: #eeeeee;
         position: relative;
         @include main-shape(20, 2);
-        
-        &::before, &::after{
-          content: '';
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        &::before,
+        &::after {
+          content: "";
           position: absolute;
-          left:-20px;
-          top:-20px;
+          left: -20px;
+          top: -20px;
           @include main-shape(20, 2);
-          background:linear-gradient(45deg, rgb(226, 86, 109),rgb(187, 140, 10), rgb(52, 161, 19),rgb(73, 35, 209),rgb(238, 64, 93),rgb(187, 140, 10), rgb(226, 86, 109),);
+          background: linear-gradient(
+            45deg,
+            rgb(226, 86, 109),
+            rgb(187, 140, 10),
+            rgb(52, 161, 19),
+            rgb(73, 35, 209),
+            rgb(238, 64, 93),
+            rgb(187, 140, 10),
+            rgb(226, 86, 109)
+          );
           background-size: 500%;
           width: 107%;
           height: 120%;
           z-index: -1;
           animation: glow 20s linear infinite;
           @keyframes glow {
-          0% {
-            background-position: 0 0;
-          }
-          50%{
-            background-position: 200% 0;
-          }
-          100%{
-            background-position:  0 0;
+            0% {
+              background-position: 0 0;
+            }
+            50% {
+              background-position: 200% 0;
+            }
+            100% {
+              background-position: 0 0;
+            }
           }
         }
-
-        }
-        &::before, &::after{
+        &::before,
+        &::after {
           filter: blur(15px);
           opacity: 0.5;
         }
-        
-        & .close{
+
+        & .close {
           top: rem(20);
           right: rem(15);
         }
       }
-     
-        
+
       &__text {
-       text-indent: 1em;
-       white-space: pre-line;
-       
-      
-     
+        text-indent: 1em;
+        white-space: pre-line;
       }
-      &__text::first-letter{
+      &__text::first-letter {
         text-transform: capitalize;
       }
-      &__date {
-      }
-      &__user-name{
-        text-shadow:-1px 3px 10px $btn-main-color;
+     
+      &__user-name {
+        text-shadow: -1px 3px 10px $btn-main-color;
       }
     }
+    
+  .passive{
+    width: 100%;
+      height: 100vh;
+      background-color:rgba(238, 238, 238, 0.4);
+      @extend %title-font-style;
+      font-weight: 700;
+      font-size: rem(30);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 25;
+    &__content {
+      @include main-shape(20, 2);
+      background-color: rgba(127, 255, 212, 0.9);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+      width: 40%;
+      height: fit-content;
+      margin: 20vh auto;
+      padding: rem(50);
+      
+    }
+    &__text {
+      color: $title-color;
+      text-indent: 1em;
+      white-space: pre-line;
+      text-align: center;
+
+    }
+    &__text::first-letter {
+      text-transform: capitalize;
+    }
+  }
   }
 }

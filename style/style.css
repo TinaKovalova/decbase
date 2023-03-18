@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 700;
 }
-.page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .popup .passive, .page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -31,7 +31,7 @@
 /*>=1081 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .popup .passive, .page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -701,7 +701,7 @@ template {
     font-weight: 700;
   }
 }
-.page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .popup .passive, .page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -719,7 +719,7 @@ template {
   color: #37806B;
   background-color: #ffffff;
 }
-.page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .popup .passive, .page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -850,7 +850,7 @@ template {
 .page .wrapper .header__container .auth__link {
   color: #ffffff;
 }
-.page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .popup .passive, .page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -868,7 +868,7 @@ template {
   color: #37806B;
   background-color: #ffffff;
 }
-.page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
+.page .wrapper .main .popup .passive, .page .wrapper .main .popup .discount, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .news__title, .page .wrapper .main .news__section-title, .page .wrapper .main .testimonials__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .services__title, .page .wrapper .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -1612,7 +1612,8 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.page .wrapper .main .testimonials .swiper .swiper-button-prev, .page .wrapper .main .testimonials .swiper .swiper-button-next {
+.page .wrapper .main .testimonials .swiper .swiper-button-prev,
+.page .wrapper .main .testimonials .swiper .swiper-button-next {
   position: absolute;
   top: 3.125rem;
 }
@@ -2008,7 +2009,7 @@ template {
 .page .wrapper .main .popup .discount {
   width: 100%;
   height: 100vh;
-  background-color: rgba(127, 255, 212, 0.3019607843);
+  background-color: rgba(127, 255, 212, 0.2);
   font-weight: 700;
   font-size: 1.875rem;
   position: fixed;
@@ -2031,6 +2032,8 @@ template {
   border-width: 0.125rem;
   border-color: transparent;
   border-style: solid;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .page .wrapper .main .popup .discount__content::before, .page .wrapper .main .popup .discount__content::after {
   content: "";
@@ -2090,7 +2093,42 @@ template {
 .page .wrapper .main .popup .discount__user-name {
   text-shadow: -1px 3px 10px #37806B;
 }
-.page .wrapper .main .project__container .content__title, .page .wrapper .main .services__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .testimonials__title, .page .wrapper .main .news__section-title, .page .wrapper .main .news__title, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .popup .discount {
+.page .wrapper .main .popup .passive {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(238, 238, 238, 0.4);
+  font-weight: 700;
+  font-size: 1.875rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+}
+.page .wrapper .main .popup .passive__content {
+  border-radius: 1.25rem 0rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  border-style: solid;
+  background-color: rgba(127, 255, 212, 0.9);
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20vh auto;
+  padding: 3.125rem;
+}
+.page .wrapper .main .popup .passive__text {
+  color: #212121;
+  text-indent: 1em;
+  white-space: pre-line;
+  text-align: center;
+}
+.page .wrapper .main .popup .passive__text::first-letter {
+  text-transform: capitalize;
+}
+.page .wrapper .main .project__container .content__title, .page .wrapper .main .services__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .testimonials__title, .page .wrapper .main .news__section-title, .page .wrapper .main .news__title, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .popup .discount, .page .wrapper .main .popup .passive {
   font-family: "Poppins", serif;
   color: #212121;
 }
@@ -2108,7 +2146,7 @@ template {
   color: #37806B;
   background-color: #ffffff;
 }
-.page .wrapper .main .project__container .content__title, .page .wrapper .main .services__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .testimonials__title, .page .wrapper .main .news__section-title, .page .wrapper .main .news__title, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .popup .discount {
+.page .wrapper .main .project__container .content__title, .page .wrapper .main .services__title, .page .wrapper .main .about__container .content-about__title, .page .wrapper .main .shop__container .content-shop__title, .page .wrapper .main .stat__container .stat__title, .page .wrapper .main .testimonials__subtitle, .page .wrapper .main .testimonials__title, .page .wrapper .main .news__section-title, .page .wrapper .main .news__title, .page .wrapper .main .subscribe__form-title, .page .wrapper .main .popup .discount, .page .wrapper .main .popup .passive {
   font-family: "Poppins", serif;
   color: #212121;
 }

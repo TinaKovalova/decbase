@@ -1,5 +1,5 @@
 import {getServices, getPosts, getUsers} from "./fetches.js";
-import {createServiceElement, setBtnStyle, checkFormFieldData,showDiscount, closePopUp} from './functions.js'
+import {createServiceElement, setBtnStyle, checkFormFieldData,showDiscount, closePopUp,checkInactivity} from './functions.js'
 
 
 const copyrightYear = document.querySelector('.footer__copyright-year');
@@ -7,7 +7,6 @@ const serviceMenu = document.querySelector('.services__menu');
 const serviceContainer = document.querySelector('.service');
 const slider = document.querySelector('.swiper-wrapper');
 const subscribeForm = document.querySelector('.subscribe__form');
-const subscribeBtn = subscribeForm.elements.button;
 const sliderItems= slider.children;
 const popupBlock = document.querySelector('.popup');
 
@@ -127,6 +126,7 @@ popupBlock.addEventListener('click', (event)=> closePopUp(event.target));
 
 
 copyrightYear.textContent = new Date().getFullYear();
+checkInactivity();
 
 
 

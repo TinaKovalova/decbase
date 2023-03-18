@@ -42,6 +42,8 @@ function checkFormFieldData(element, errorText){
   return isValid;
 }
 
+const showElement = (element)=>element.classList.remove('hidden');
+
 
 function showDiscount(userName){
   const discountPopUp = document.querySelector('.discount');
@@ -51,15 +53,41 @@ function showDiscount(userName){
   const day = date.getMonth()<9? `0${date.getMonth()+1}`: date.getMonth()+1;
   discountDate.textContent = `${date.getDate()}.${day}.${date.getFullYear()}`;
   discountUserName.textContent = userName;
-  discountPopUp.classList.remove('hidden');
+  showElement(discountPopUp);
+  new Promise((res, reg)=> setTimeout(closePopUp, 5000, discountPopUp))
+ 
 }
 
 function closePopUp(element){
-  console.log(element ,element.dataset.target )
   element.closest(`.${element.dataset.target}`)?.classList.add('hidden');
 }
 
+function checkInactivity() {
+  const passivePopUp = document.querySelector('.passive');
+  let timerId, timerVisible;
+  const setNewTimer = () => {
+    clearTimeout(timerId);
+    clearTimeout(timerVisible);
+    closePopUp(passivePopUp);
+
+   new Promise((resolve, reject)=>{
+      timerId = setTimeout(() => {
+        showElement(passivePopUp);
+        resolve()
+      }, 60000);
+    }).then(()=>new Promise((resolve, reject)=>{
+      timerVisible = setTimeout(() => {
+        window.close();
+      }, 30000);
+    }))
+  };
+  
+  document.documentElement.addEventListener("mousemove", setNewTimer);
+  document.documentElement.addEventListener("click", setNewTimer);
+  document.documentElement.addEventListener("keydown", setNewTimer);
+  document.documentElement.addEventListener("touchstart", setNewTimer);
+}
 
  
- export  {createServiceElement, setBtnStyle, checkFormFieldData, showDiscount, closePopUp};
+ export  {createServiceElement, setBtnStyle, checkFormFieldData, showDiscount, closePopUp,checkInactivity };
   
