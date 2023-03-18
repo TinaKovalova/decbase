@@ -1,9 +1,9 @@
-.main .subscribe__form-title, .main .news__title, .main .news__section-title, .main .testimonials__title, .main .testimonials__subtitle, .main .stat__container .stat__title, .main .shop__container .content-shop__title, .main .about__container .content-about__title, .main .services__title, .main .project__container .content__title {
+.main .popup .discount, .main .subscribe__form-title, .main .news__title, .main .news__section-title, .main .testimonials__title, .main .testimonials__subtitle, .main .stat__container .stat__title, .main .shop__container .content-shop__title, .main .about__container .content-about__title, .main .services__title, .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 
-.main .popup .discount, .main .services__btn {
+.main .services__btn {
   font-family: "Open Sans", serif;
 }
 
@@ -24,12 +24,12 @@
 /*>=1081 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.main .subscribe__form-title, .main .news__title, .main .news__section-title, .main .testimonials__title, .main .testimonials__subtitle, .main .stat__container .stat__title, .main .shop__container .content-shop__title, .main .about__container .content-about__title, .main .services__title, .main .project__container .content__title {
+.main .popup .discount, .main .subscribe__form-title, .main .news__title, .main .news__section-title, .main .testimonials__title, .main .testimonials__subtitle, .main .stat__container .stat__title, .main .shop__container .content-shop__title, .main .about__container .content-about__title, .main .services__title, .main .project__container .content__title {
   font-family: "Poppins", serif;
   color: #212121;
 }
 
-.main .popup .discount, .main .services__btn {
+.main .services__btn {
   font-family: "Open Sans", serif;
 }
 
@@ -1172,7 +1172,7 @@
 .main .popup .discount {
   width: 100%;
   height: 100vh;
-  background-color: rgba(127, 255, 212, 0.3);
+  background-color: rgba(127, 255, 212, 0.3019607843);
   font-weight: 700;
   font-size: 1.875rem;
   position: fixed;
@@ -1181,7 +1181,7 @@
   z-index: 25;
 }
 .main .popup .discount__content {
-  width: 30%;
+  width: 40%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1195,10 +1195,62 @@
   border-width: 0.125rem;
   border-color: transparent;
   border-style: solid;
-  -webkit-box-shadow: -1px 3px 10px #37806B;
-          box-shadow: -1px 3px 10px #37806B;
+}
+.main .popup .discount__content::before, .main .popup .discount__content::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  border-radius: 1.25rem 0rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  border-style: solid;
+  background: linear-gradient(45deg, rgb(226, 86, 109), rgb(187, 140, 10), rgb(52, 161, 19), rgb(73, 35, 209), rgb(238, 64, 93), rgb(187, 140, 10), rgb(226, 86, 109));
+  background-size: 500%;
+  width: 107%;
+  height: 120%;
+  z-index: -1;
+  -webkit-animation: glow 20s linear infinite;
+          animation: glow 20s linear infinite;
+}
+@-webkit-keyframes glow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes glow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.main .popup .discount__content::before, .main .popup .discount__content::after {
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+  opacity: 0.5;
 }
 .main .popup .discount__content .close {
   top: 1.25rem;
   right: 0.9375rem;
+}
+.main .popup .discount__text {
+  text-indent: 1em;
+  white-space: pre-line;
+}
+.main .popup .discount__text::first-letter {
+  text-transform: capitalize;
+}
+.main .popup .discount__user-name {
+  text-shadow: -1px 3px 10px #37806B;
 }

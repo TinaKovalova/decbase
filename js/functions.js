@@ -48,7 +48,8 @@ function showDiscount(userName){
   const discountDate = discountPopUp.querySelector('.discount__date');
   const discountUserName = discountPopUp.querySelector('.discount__user-name');
   const date = new Date();
-  discountDate.textContent = `${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}`;
+  const day = date.getMonth()<9? `0${date.getMonth()+1}`: date.getMonth()+1;
+  discountDate.textContent = `${date.getDate()}.${day}.${date.getFullYear()}`;
   discountUserName.textContent = userName;
   discountPopUp.classList.remove('hidden');
 }
