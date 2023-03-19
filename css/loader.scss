@@ -1,151 +1,167 @@
 @import "_fonts", "_variables", "_functions";
 @import "_reset";
 .loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: linear-gradient(
+    45deg,
+    #f17c58,
+    #e94584,
+    #24aadb,
+    #27dbb1,
+    #ffdc18,
+    #ff3706
+  );
+  background-size: 600% 100%;
+  animation: gradient 5s linear infinite, disappear 0.5s ease forwards 4.5s;
+  animation-direction: alternate;
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  @keyframes disappear {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &__wrapper {
     width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
-    background-size: 600% 100%;
-    animation: gradient 5s linear infinite;
-    animation-direction: alternate;
-    @keyframes gradient {
+  }
+  .circle-wrapper {
+    .circle {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      background-color: $btn-main-color;
+      border-radius: 50%;
+      box-shadow: #fff 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      filter: blur(1px);
+    }
+    .circle.first {
+      top: 25%;
+      left: 19.5%;
+      animation: moving 5s ease-in-out infinite;
+    }
+    .circle.second {
+      bottom: 25%;
+      right: 19%;
+      animation: movingBack 5s ease-in-out infinite;
+    }
+
+    .circle:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+    .circle:nth-child(3) {
+      animation-delay: -0.6s;
+    }
+    @keyframes moving {
       0% {
-        background-position: 0%;
+        transform-origin: 700% 100%;
+        transform: rotate(0);
+      }
+      50% {
+        transform-origin: 700% 100%;
+        transform: rotate(360deg);
+      }
+      50.01% {
+        transform-origin: -700% 100%;
+        transform: rotate(0);
       }
       100% {
-        background-position: 100%;
+        transform-origin: -700% 50%;
+        transform: rotate(-360deg);
       }
     }
-    &__wrapper {
-      width: 100%;
-    }
-    .circle-wrapper {
-      .circle {
-        position: absolute;
-        width: 1rem;
-        height: 1rem;
-        background-color: $btn-main-color;
-        border-radius: 50%;
-        box-shadow: #fff 0px -23px 25px 0px inset,
-          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-          rgba(0, 0, 0, 0.09) 0px 32px 16px;
-        filter: blur(1px);
+    @keyframes movingBack {
+      0% {
+        transform-origin: -700% 50%;
+        transform: rotate(-360deg);
       }
-      .circle.first {
-        top: 25%;
-        left: 19.5%;
-        animation: moving 5s ease-in-out infinite;
-
+      50% {
+        transform-origin: -700% 100%;
+        transform: rotate(0);
       }
-      .circle.second {
-        bottom: 25%;
-        right: 19%;
-        animation: movingBack 5s ease-in-out infinite;
-
+      50.01% {
+        transform-origin: 700% 100%;
+        transform: rotate(360deg);
       }
-   
-      .circle:nth-child(2) {
-        animation-delay: -0.3s;
-      }
-      .circle:nth-child(3) {
-        animation-delay: -0.6s;
-      }
-      @keyframes moving {
-        0% {
-          transform-origin: 700% 100%;
-          transform: rotate(0);
-        }
-        50% {
-          transform-origin: 700% 100%;
-          transform: rotate(360deg);
-        }
-        50.01% {
-          transform-origin: -700% 100%;
-          transform: rotate(0);
-        }
-        100% {
-          transform-origin: -700% 50%;
-          transform: rotate(-360deg);
-        }
-      }
-      @keyframes movingBack {
-        0% {
-          transform-origin: -700% 50%;
-          transform: rotate(-360deg);
-        }
-        50% {
-          transform-origin: -700% 100%;
-          transform: rotate(0); 
-        }
-        50.01% {
-          transform-origin: 700% 100%;
-          transform: rotate(360deg);
-        }
-        100% {
-          transform-origin: 700% 100%;
-          transform: rotate(0);
-        }
-      }
-    }
-    #company {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      animation: draw 1s ease forwards, coloring 2s ease alternate 3s;
-    }
-
-    #company path:nth-child(2) {
-      stroke-dasharray: 259;
-      stroke-dashoffset: 259;
-      animation: draw 1s ease forwards, coloring 2s ease alternate 2.8s;
-    }
-    #company path:nth-child(3) {
-      stroke-dasharray: 237;
-      stroke-dashoffset: 237;
-      animation: draw 1s ease forwards 0.3s, coloring 2s ease alternate 3s;
-    }
-    #company path:nth-child(4) {
-      stroke-dasharray: 225;
-      stroke-dashoffset: 225;
-      animation: draw 1s ease forwards 0.6s, coloring 2s ease alternate 3s;
-    }
-    #company path:nth-child(5) {
-      stroke-dasharray: 284;
-      stroke-dashoffset: 284;
-      animation: draw 1s ease forwards 0.9s, coloring 2s ease alternate 3s;
-    }
-    #company path:nth-child(6) {
-      stroke-dasharray: 258;
-      stroke-dashoffset: 258;
-      animation: draw 1s ease forwards 1.2s, coloring 2s ease alternate 3s;
-    }
-    #company path:nth-child(7) {
-      stroke-dasharray: 238;
-      stroke-dashoffset: 238;
-      animation: draw 1s ease forwards 1.5s, coloring 2s ease alternate 3.1s;
-    }
-    #company path:nth-child(8) {
-      stroke-dasharray: 237;
-      stroke-dashoffset: 237;
-      animation: draw 1s ease forwards 1.8s, coloring 2s ease alternate 3.2s;
-    }
-    @keyframes draw {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    @keyframes coloring {
-      from {
-        fill: transparent;
-      }
-      to {
-        fill: #fff;
+      100% {
+        transform-origin: 700% 100%;
+        transform: rotate(0);
       }
     }
   }
+  #company {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: draw 1s ease forwards, coloring 2s ease alternate 3s;
+  }
+
+  #company path:nth-child(2) {
+    stroke-dasharray: 259;
+    stroke-dashoffset: 259;
+    animation: draw 1s ease forwards, coloring 2s ease alternate 2.8s;
+  }
+  #company path:nth-child(3) {
+    stroke-dasharray: 237;
+    stroke-dashoffset: 237;
+    animation: draw 1s ease forwards 0.3s, coloring 2s ease alternate 3s;
+  }
+  #company path:nth-child(4) {
+    stroke-dasharray: 225;
+    stroke-dashoffset: 225;
+    animation: draw 1s ease forwards 0.6s, coloring 2s ease alternate 3s;
+  }
+  #company path:nth-child(5) {
+    stroke-dasharray: 284;
+    stroke-dashoffset: 284;
+    animation: draw 1s ease forwards 0.9s, coloring 2s ease alternate 3s;
+  }
+  #company path:nth-child(6) {
+    stroke-dasharray: 258;
+    stroke-dashoffset: 258;
+    animation: draw 1s ease forwards 1.2s, coloring 2s ease alternate 3s;
+  }
+  #company path:nth-child(7) {
+    stroke-dasharray: 238;
+    stroke-dashoffset: 238;
+    animation: draw 1s ease forwards 1.5s, coloring 2s ease alternate 3.1s;
+  }
+  #company path:nth-child(8) {
+    stroke-dasharray: 237;
+    stroke-dashoffset: 237;
+    animation: draw 1s ease forwards 1.8s, coloring 2s ease alternate 3.2s;
+  }
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes coloring {
+    from {
+      fill: transparent;
+    }
+    to {
+      fill: #fff;
+    }
+  }
+}

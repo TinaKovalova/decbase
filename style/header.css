@@ -15,7 +15,7 @@
 /*<=480 mobile*/
 .header {
   width: 100%;
-  min-height: 0.875rem;
+  min-height: 8.75rem;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.375rem;
@@ -26,10 +26,10 @@
   z-index: 20;
 }
 .header__container {
-  width: 79.1666666667vw;
+  width: 80.8510638298vw;
   padding: 0 0.625em;
   margin: 0 auto;
-  padding: 2.6041666667vw 6.9791666667vw 2.6041666667vw 2.8645833333vw;
+  padding: 2.6595744681vw 7.1276595745vw 2.6595744681vw 2.9255319149vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,9 +66,9 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-column-gap: 0.5208333333vw;
-     -moz-column-gap: 0.5208333333vw;
-          column-gap: 0.5208333333vw;
+  -webkit-column-gap: 0.5319148936vw;
+     -moz-column-gap: 0.5319148936vw;
+          column-gap: 0.5319148936vw;
   height: 2rem;
 }
 .header__container .menu__item {
@@ -83,12 +83,11 @@
 .header__container .menu__item.auth {
   min-width: 5.9375rem;
   min-height: 2rem;
-  padding: 0.1875rem 0.3125rem;
   border-radius: 0.9375rem 0rem;
   border-width: 0.125rem;
   border-color: transparent;
   border-style: solid;
-  background-color: #CAA892;
+  background-color: #caa892;
   text-transform: capitalize;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -97,17 +96,17 @@
   color: #ffffff;
 }
 .header__container .menu__item.auth:hover {
-  border-color: #B0855B;
+  border-color: #b0855b;
   background-color: #ffffff;
 }
 .header__container .menu__item.auth:hover .auth__link {
-  color: #B0855B;
+  color: #b0855b;
 }
 .header__container .menu__item:hover {
-  border-color: #37806B;
+  border-color: #37806b;
 }
 .header__container .menu__item:hover .menu__link {
-  color: #37806B;
+  color: #37806b;
 }
 .header__container .menu__link {
   color: inherit;
@@ -118,7 +117,7 @@
     padding-right: 0;
   }
   .header__container {
-    width: 84.375vw;
+    width: 86.170212766vw;
   }
 }
 @media (max-width: rem(1080.98)) {
@@ -148,9 +147,9 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    -webkit-column-gap: 0.2604166667vw;
-       -moz-column-gap: 0.2604166667vw;
-            column-gap: 0.2604166667vw;
+    -webkit-column-gap: 0.2659574468vw;
+       -moz-column-gap: 0.2659574468vw;
+            column-gap: 0.2659574468vw;
     font-size: 1.7rem;
     font-weight: 700;
     height: 100%;
@@ -227,11 +226,11 @@
   height: 1rem;
 }
 .header .progress__container {
-  width: 79.1666666667vw;
+  width: 80.8510638298vw;
   padding: 0 0.625em;
   margin: 0 auto;
   margin: 0 auto;
-  padding: 0 6.9791666667vw;
+  padding: 0 7.1276595745vw;
   height: 0.5em;
 }
 .header .progress__rate {

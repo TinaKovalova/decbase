@@ -1,7 +1,5 @@
 import {getServices, getPosts, getUsers} from "./fetches.js";
-import {createServiceElement, setBtnStyle, checkFormFieldData,showDiscount, closePopUp,checkInactivity, trackDocumentScroll,moveToElement} from './functions.js'
-
-
+import {createServiceElement, setBtnStyle, checkFormFieldData,showDiscount, closePopUp,checkInactivity, trackDocumentScroll,moveToElement, fillServices} from './functions.js'
 const copyrightYear = document.querySelector('.footer__copyright-year');
 const serviceMenu = document.querySelector('.services__menu');
 const serviceContainer = document.querySelector('.service');
@@ -30,52 +28,36 @@ const btnStyle={
  }
 }
 
-
 getServices().then(result=>{
   services = [...result].filter(item=>item.postId <= 3).reduce((res, item)=>{
   res[item.postId].push(item);
   return res;
  }, {1:[] , 2:[], 3:[]}); 
+  fillServices(Object.values(services).map(item=>item[0]), serviceContainer);
 })
 
-getUsers().then(result=>{
-  // console.log('getUsers',result);
-  return users=[...result];
- 
-}).then((users)=>{
-  // console.log('users',users)
+getUsers()
+.then(result=>users=[...result])
+.then((users)=>{
   getPosts().then(result=>{
     posts= [...result].reduce((res, item)=>{
       if(!(item.userId in res)){
-        let [user]= users.filter(element=>element.id === item.userId);
-        return  ({...res,
-                   [item.userId] : {...item, 
-                                    userName: user.name,
-                                    position: user.company.bs
-                                  }
-                  });
+        let {name, company:{bs}}= users.find(element=>element.id === item.userId);
+        return  ({...res, [item.userId] : {...item, userName:name, position: bs}});
       } else return res;
     }, {});
-    
-    // console.log('posts', posts)
     return posts
-  }).then((posts)=>{
+  })
+  .then((posts)=>{
     Array.from(sliderItems).forEach((item, index)=>{
-      
       let{userName, position,body, userId}={...posts[index+1]}
-      item.dataset.index=userId;
-      // console.log(userName, position,body)
       item.querySelector('.testimonials__user-name').textContent=userName;
       item.querySelector('.testimonials__user-position').textContent=position;
       item.querySelector('.testimonials__text').textContent=body;
       if(index> 1) item.classList.add('hidden')
     })
-    
-  })
-    
-})
-
-
+  }) 
+});
 
 burger.addEventListener('click', (event)=>{
  document.querySelector('.header__menu').classList.toggle('active');
@@ -90,14 +72,9 @@ serviceMenu.addEventListener('click',(event)=>{
   activeServiceFilterBTN=target;
   setBtnStyle(target, btnStyle.activeStyle);
   if(target.closest('.services__btn') ){
-    serviceContainer.innerHTML='';
-    let data = target.value == 0 ? Object.values(services).map(item=>item[0]) : services[target.value];  
-    data.forEach(element => {
-      let{postId, name, body}= element;
-      serviceContainer.insertAdjacentHTML("beforeend", createServiceElement(postId, name, body))
-    });
+    let data = target.value == 0 ? Object.values(services).map(item=>item[0]) : services[target.value]; 
+    fillServices(data, serviceContainer);
   } 
-
 })
 
 subscribeForm.addEventListener('submit', (event)=>{
@@ -123,8 +100,6 @@ subscribeForm.addEventListener('submit', (event)=>{
 });
 
 popupBlock.addEventListener('click', (event)=> closePopUp(event.target));
-
-
 copyrightYear.textContent = new Date().getFullYear();
 checkInactivity();
 
@@ -138,7 +113,6 @@ mainMenu.addEventListener('click', (event)=>{
   }
   moveToElement(event.target);
 });
-
 
 
 

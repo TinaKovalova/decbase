@@ -1,7 +1,4 @@
  const swiper = new Swiper(".swiper", {
-    spaceBetween:10,
-    slidesPerView: 2,
-    senteredSlides:true,
     grabCursor:true,
     loop:true,
     navigation: {
@@ -11,10 +8,12 @@
     breakpoints:{
       0: {
         slidesPerView: 1,
+        slidesPerGroup:2,
         centeredSlides:true
       },
-      1300: {
-        slidesPerView: 2
+      1439: {
+        slidesPerView: 2,
+        slidesPerGroup:2,
       }
     }
   });

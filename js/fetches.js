@@ -24,4 +24,5 @@ async function getUsers(){
 
 }
 
+
 export {getServices, getPosts, getUsers};

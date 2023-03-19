@@ -1,5 +1,3 @@
-
-
 function createServiceElement (categoryId, title, description){
     const serviceIcons={ 1 :`images/services/disign_icon.svg`, 2 :`images/services/architecture_icon.svg`, 3 :`../images/services/planning_icon.svg`}
     return `<div class="service__item">
@@ -10,7 +8,15 @@ function createServiceElement (categoryId, title, description){
              </div>
            </div>`;
   }
-
+  
+  function fillServices(dataServices, serviceContainer){
+    serviceContainer.innerHTML='';
+    dataServices.forEach(element => {
+        let{postId, name, body}= element;
+        serviceContainer.insertAdjacentHTML("beforeend", createServiceElement(postId, name, body))
+      });
+  }
+  
   function setBtnStyle(target, {backgroundColor, borderColor, color}){
     target.style.backgroundColor = backgroundColor;
     target.style.borderColor = borderColor;
@@ -93,9 +99,7 @@ function trackDocumentScroll(){
   return `${document.scrollTop/document.scrollHeight*100}%`; 
 }
 function moveToElement(target){
-  console.log('moveToElement',target)
    const param = target.dataset.moveto;
-   console.log(param)
    if(param){
     const destElement = document.querySelector(param);
     const headerHeight =document.querySelector('.header').getBoundingClientRect().height;
@@ -108,5 +112,5 @@ function moveToElement(target){
 }
 
  
- export  {createServiceElement, setBtnStyle, checkFormFieldData, showDiscount, closePopUp,checkInactivity, trackDocumentScroll,moveToElement };
+ export  {createServiceElement, setBtnStyle, checkFormFieldData, showDiscount, closePopUp,checkInactivity, trackDocumentScroll,moveToElement, fillServices };
   

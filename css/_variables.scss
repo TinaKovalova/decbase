@@ -1,40 +1,38 @@
 $min-width: 320;
-$max-width: 1920;
+$max-width: 1880;
 $max-width-Container: 1500;
-$container-padding:10;
-$container-width:$max-width-Container + $container-padding * 2;
+$container-padding: 10;
+$container-width: $max-width-Container + $container-padding * 2;
 
-
-$title-color:#212121;
-$main-text-color:#646464;
-$btn-main-color: #37806B;
-$btn-color:#CAA892;
-$decor-color:#B0855B;
-$networking-color:#D5D5D5;
-$bg-color:#F8F8F8;
-$error-color:#8d0505;
+$title-color: #212121;
+$main-text-color: #646464;
+$btn-main-color: #37806b;
+$btn-color: #caa892;
+$decor-color: #b0855b;
+$networking-color: #d5d5d5;
+$bg-color: #f8f8f8;
+$error-color: #8d0505;
 
 %title-font-style {
-    font-family: 'Poppins', serif;
-    color: $title-color;
+  font-family: "Poppins", serif;
+  color: $title-color;
 }
 %main-text-style {
-    font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
 }
-%green-btn-style{
-    text-transform: uppercase;
-    background-color: $btn-main-color;
-    color: #ffffff;
-    text-align: center;
+%green-btn-style {
+  text-transform: uppercase;
+  background-color: $btn-main-color;
+  color: #ffffff;
+  text-align: center;
 }
-%green-btn-hover-style{
-    border-color: $btn-main-color;
-    color: $btn-main-color;
-    background-color: #ffffff;
+%green-btn-hover-style {
+  border-color: $btn-main-color;
+  color: $btn-main-color;
+  background-color: #ffffff;
 }
 
-
-$breakpoint-desktop:rem($container-width); /* Desktop, large screens*/
-$breakpoint-laptop:rem(1439.98);/*>=1081 Small screens, laptop*/
-$breakpoint-tablet:rem(1080.98); /*>=480 Ipads, Tablets*/
-$breakpoint-mobile:rem(479.98);/*<=480 mobile*/
+$breakpoint-desktop: rem($container-width); /* Desktop, large screens*/
+$breakpoint-laptop: rem(1439.98); /*>=1081 Small screens, laptop*/
+$breakpoint-tablet: rem(1080.98); /*>=480 Ipads, Tablets*/
+$breakpoint-mobile: rem(479.98); /*<=480 mobile*/
