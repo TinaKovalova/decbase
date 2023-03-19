@@ -1,8 +1,8 @@
 @import "_variables", "_functions";
 .main {
-  flex: 1 1 auto;
   width: 100%;
-
+  flex: 1 1 auto;
+  
   .project {
     position: relative;
     &::before {
@@ -706,6 +706,11 @@
     &__item {
       flex: 0 1 rem(620);
       min-height: rem(646);
+      transition: all 0.5s;
+      &:hover{
+        transform: scale(1.05) translate3d(0, -5%, -5em);
+      
+      }
     }
     &__view {
       display: block;
@@ -892,9 +897,7 @@
   }
 
   .popup {
-    .hidden {
-      visibility: hidden;
-    }
+   
     &__container {
       @include main-container();
     }

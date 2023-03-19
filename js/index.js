@@ -1,5 +1,5 @@
 import {getServices, getPosts, getUsers} from "./fetches.js";
-import {createServiceElement, setBtnStyle, checkFormFieldData,showDiscount, closePopUp,checkInactivity, trackDocumentScroll} from './functions.js'
+import {createServiceElement, setBtnStyle, checkFormFieldData,showDiscount, closePopUp,checkInactivity, trackDocumentScroll,moveToElement} from './functions.js'
 
 
 const copyrightYear = document.querySelector('.footer__copyright-year');
@@ -9,7 +9,9 @@ const slider = document.querySelector('.swiper-wrapper');
 const subscribeForm = document.querySelector('.subscribe__form');
 const sliderItems= slider.children;
 const popupBlock = document.querySelector('.popup');
+const burger = document.querySelector('.burger-icon');
 const progress = document.querySelector('.progress__rate');
+const mainMenu = document.querySelector('.header__menu');
 
 let services, posts;
 let users;
@@ -75,7 +77,11 @@ getUsers().then(result=>{
 
 
 
+burger.addEventListener('click', (event)=>{
+ document.querySelector('.header__menu').classList.toggle('active');
+ burger.classList.toggle('active');
 
+})
 serviceMenu.addEventListener('click',(event)=>{
     const {target} = event;
   if(activeServiceFilterBTN){
@@ -105,22 +111,15 @@ subscribeForm.addEventListener('submit', (event)=>{
   checkedData.username = checkFormFieldData(username,"Only letters a-b. Use lowercase letters, capitalize only the first letter.");
   checkedData.surname = checkFormFieldData(surname,"Only letters a-b. Use lowercase letters, capitalize only the first letter.");
   checkedData.email = checkFormFieldData(email,"Invalid email. Valid format : example@email.com ");
-  // console.log({checkedData})
-  // console.log(Object.values(checkedData).every(item => item == false))
 
   if (Object.values(checkedData).every(item => item == true)){
     localStorage.setItem('userName', username.value);
     localStorage.setItem('userSurame', surname.value);
     localStorage.setItem('userEmail', email.value);
-    // console.log('save')
     showDiscount(username.value);
     subscribeForm.reset();
     
   }
-
-
- 
- 
 });
 
 popupBlock.addEventListener('click', (event)=> closePopUp(event.target));
@@ -130,6 +129,15 @@ copyrightYear.textContent = new Date().getFullYear();
 checkInactivity();
 
 window.addEventListener('scroll', (event)=>progress.style.width = trackDocumentScroll());
+mainMenu.addEventListener('click', (event)=>{
+  event.preventDefault();
+  if(mainMenu.classList.contains('active')) 
+  {
+    mainMenu.classList.remove('active');
+    burger.classList.remove('active');
+  }
+  moveToElement(event.target);
+});
 
 
 

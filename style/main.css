@@ -51,10 +51,10 @@
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
 .main {
+  width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  width: 100%;
 }
 .main .project {
   position: relative;
@@ -65,14 +65,14 @@
 .main .project::before {
   content: url("../images/project/decor.svg");
   display: block;
-  width: 11.0638297872vw;
-  height: 7.9787234043vw;
+  width: 10.8333333333vw;
+  height: 7.8125vw;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 .main .project__container {
-  width: 80.8510638298vw;
+  width: 79.1666666667vw;
   padding: 0 0.625em;
   margin: 0 auto;
   display: -webkit-box;
@@ -108,7 +108,7 @@
 .main .project__container .content__title {
   font-weight: 600;
   text-transform: capitalize;
-  font-size: 3.829787234vw;
+  font-size: 3.75vw;
   line-height: 4.875rem;
   margin-top: 0.8125rem;
 }
@@ -132,8 +132,8 @@
 }
 .main .project__container .view {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 37.3936170213vw;
-          flex: 0 1 37.3936170213vw;
+      -ms-flex: 0 1 36.6145833333vw;
+          flex: 0 1 36.6145833333vw;
   min-width: 25.9375rem;
   min-height: 40.375rem;
   border-radius: 8.5625rem 0rem;
@@ -184,14 +184,14 @@
 .main .services::after {
   content: url("../images/services/decor_service.svg");
   display: block;
-  width: 12.8723404255vw;
-  height: 13.5638297872vw;
+  width: 12.6041666667vw;
+  height: 13.28125vw;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 .main .services__container {
-  width: 80.8510638298vw;
+  width: 79.1666666667vw;
   padding: 0 0.625em;
   margin: 0 auto;
   padding-top: 8.9375rem;
@@ -216,7 +216,7 @@
 .main .services__title {
   font-weight: 500;
   text-transform: capitalize;
-  font-size: 2.5531914894vw;
+  font-size: 2.5vw;
   line-height: 4.875rem;
   color: #212121;
   margin-left: 1.4375rem;
@@ -225,7 +225,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3.9893617021vw;
+  gap: 3.90625vw;
   font-size: 1rem;
   margin: 1.8125rem 0 6.875rem 1.4375rem;
 }
@@ -343,14 +343,14 @@
 .main .about::before {
   content: url("../images/about/decor-about.svg");
   display: inline-block;
-  width: 11.0638297872vw;
-  height: 7.9787234043vw;
+  width: 10.8333333333vw;
+  height: 7.8125vw;
   position: absolute;
-  bottom: -3.9893617021vw;
-  left: 13.085106383vw;
+  bottom: -3.90625vw;
+  left: 12.8125vw;
 }
 .main .about__container {
-  width: 80.8510638298vw;
+  width: 79.1666666667vw;
   padding: 0 0.625em;
   margin: 0 auto;
   display: -webkit-box;
@@ -364,8 +364,8 @@
 }
 .main .about__container .view-about {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 35.585106383vw;
-          flex: 0 1 35.585106383vw;
+      -ms-flex: 0 1 34.84375vw;
+          flex: 0 1 34.84375vw;
   min-width: 30.125rem;
   min-height: 44.4375rem;
   border-radius: 8.5625rem 0rem;
@@ -452,7 +452,7 @@
   .main .about__container {
     padding-left: 0;
     padding-right: 0;
-    width: 86.170212766vw;
+    width: 84.375vw;
   }
   .main .about__container__title {
     font-size: 2.5rem;
@@ -464,14 +464,14 @@
 .main .shop::after {
   content: url("../images/shop/decore-shop.svg");
   display: block;
-  width: 11.0638297872vw;
-  height: 8.1914893617vw;
+  width: 10.8333333333vw;
+  height: 8.0208333333vw;
   position: absolute;
   top: 40%;
   right: 0;
 }
 .main .shop__container {
-  width: 80.8510638298vw;
+  width: 79.1666666667vw;
   padding: 0 0.625em;
   margin: 0 auto;
   display: -webkit-box;
@@ -536,8 +536,8 @@
 }
 .main .shop__container .view-shop {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 35.585106383vw;
-          flex: 0 1 35.585106383vw;
+      -ms-flex: 0 1 34.84375vw;
+          flex: 0 1 34.84375vw;
   min-width: 31.8125rem;
   min-height: 44.4375rem;
   border-radius: 8.5625rem 0rem;
@@ -575,7 +575,7 @@
   .main .shop__container {
     padding-left: 0;
     padding-right: 0;
-    width: 86.170212766vw;
+    width: 84.375vw;
   }
   .main .shop__container__title {
     font-size: 2.5rem;
@@ -588,20 +588,20 @@
 .main .stat::after {
   content: url("../images/stat/decor-stat.svg");
   display: block;
-  width: 11.329787234vw;
-  height: 8.1914893617vw;
+  width: 11.09375vw;
+  height: 8.0208333333vw;
   position: absolute;
   bottom: -10%;
   left: 0;
 }
 .main .stat__container {
-  width: 80.8510638298vw;
+  width: 79.1666666667vw;
   padding: 0 0.625em;
   margin: 0 auto;
   padding: 5.125rem 6.25rem;
 }
 .main .stat__container .stat__title {
-  width: 43.670212766vw;
+  width: 42.7604166667vw;
   margin: 0 auto;
   font-weight: 500;
   text-transform: capitalize;
@@ -692,7 +692,7 @@
   .main .stat__container {
     padding-left: 0;
     padding-right: 0;
-    width: 86.170212766vw;
+    width: 84.375vw;
   }
 }
 @media (max-width: rem(1080.98)) {
@@ -704,7 +704,7 @@
   min-width: 50.75rem;
 }
 .main .testimonials__container {
-  width: 80.8510638298vw;
+  width: 79.1666666667vw;
   padding: 0 0.625em;
   margin: 0 auto;
   padding: 8.4375rem 0.3125rem 6.25rem 0;
@@ -796,7 +796,7 @@
   border-width: 0rem;
   border-color: transparent;
   border-style: solid;
-  width: 30.3723404255vw;
+  width: 29.7395833333vw;
   min-height: 14.125rem;
   padding: 2.5rem 2.625rem 3.75rem 5.9375rem;
   background: #ffffff;
@@ -838,7 +838,7 @@
 .main .testimonials__user-name {
   color: #212121;
   font-weight: 700;
-  font-size: 1.2765957447vw;
+  font-size: 1.25vw;
   line-height: 2.0625rem;
   margin-top: 0.1875rem;
 }
@@ -874,14 +874,14 @@
 .main .news::after {
   content: url("../images/news/decor-news.svg");
   display: block;
-  width: 11.1170212766vw;
-  height: 8.1914893617vw;
+  width: 10.8854166667vw;
+  height: 8.0208333333vw;
   position: absolute;
   bottom: -7%;
   right: 0;
 }
 .main .news__container {
-  width: 80.8510638298vw;
+  width: 79.1666666667vw;
   padding: 0 0.625em;
   margin: 0 auto;
   padding: 5.625rem 0.625rem 7.625rem 6.25rem;
@@ -922,10 +922,16 @@
       -ms-flex: 0 1 38.75rem;
           flex: 0 1 38.75rem;
   min-height: 40.375rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.main .news__item:hover {
+  -webkit-transform: scale(1.05) translate3d(0, -5%, -5em);
+          transform: scale(1.05) translate3d(0, -5%, -5em);
 }
 .main .news__view {
   display: block;
-  width: 29.4680851064vw;
+  width: 28.8541666667vw;
   height: 24.1875rem;
   position: relative;
   z-index: 2;
@@ -990,14 +996,14 @@
 .main .subscribe::after {
   content: url("../images/subscribe/decor-subscribe.svg");
   display: block;
-  width: 11.329787234vw;
-  height: 8.1914893617vw;
+  width: 11.09375vw;
+  height: 8.0208333333vw;
   position: absolute;
   bottom: -10%;
   left: 0.625rem;
 }
 .main .subscribe__container {
-  width: 80.8510638298vw;
+  width: 79.1666666667vw;
   padding: 0 0.625em;
   margin: 0 auto;
   min-height: 100%;
@@ -1024,8 +1030,8 @@
 }
 .main .subscribe__form {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 41.0638297872vw;
-          flex: 0 1 41.0638297872vw;
+      -ms-flex: 0 1 40.2083333333vw;
+          flex: 0 1 40.2083333333vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,12 +1058,12 @@
 .main .subscribe__form-title::after {
   content: "";
   display: block;
-  width: 24.5212765957vw;
+  width: 24.0104166667vw;
   border: 1px solid #646464;
   margin: 2.5rem auto;
 }
 .main .subscribe__form-info {
-  max-width: 34.3617021277vw;
+  max-width: 33.6458333333vw;
   text-align: center;
 }
 .main .subscribe__user-data {
@@ -1124,7 +1130,7 @@
 }
 .main .subscribe__btn {
   margin-top: 5.75rem;
-  min-width: 9.5744680851vw;
+  min-width: 9.375vw;
   border-radius: 1.25rem 0rem;
   border-width: 0.3125rem;
   border-color: transparent;
@@ -1135,11 +1141,8 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.main .popup .hidden {
-  visibility: hidden;
-}
 .main .popup__container {
-  width: 80.8510638298vw;
+  width: 79.1666666667vw;
   padding: 0 0.625em;
   margin: 0 auto;
 }

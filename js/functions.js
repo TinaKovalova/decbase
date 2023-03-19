@@ -89,10 +89,24 @@ function checkInactivity() {
 }
 
 function trackDocumentScroll(){
-  const documentHeight = window.document.documentElement.scrollHeight;
-  return `${window.pageYOffset/documentHeight*100}%`; 
+  const document = window.document.documentElement;
+  return `${document.scrollTop/document.scrollHeight*100}%`; 
+}
+function moveToElement(target){
+  console.log('moveToElement',target)
+   const param = target.dataset.moveto;
+   console.log(param)
+   if(param){
+    const destElement = document.querySelector(param);
+    const headerHeight =document.querySelector('.header').getBoundingClientRect().height;
+    const destination = destElement.getBoundingClientRect().top + window.scrollY - headerHeight; 
+    window.scrollTo({
+      top: destination,
+      behavior:"smooth"
+    });
+   } 
 }
 
  
- export  {createServiceElement, setBtnStyle, checkFormFieldData, showDiscount, closePopUp,checkInactivity, trackDocumentScroll };
+ export  {createServiceElement, setBtnStyle, checkFormFieldData, showDiscount, closePopUp,checkInactivity, trackDocumentScroll,moveToElement };
   

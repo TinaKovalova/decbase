@@ -2,13 +2,13 @@
 
 .header {
   width: 100%;
-  min-height: rem(146);
+  min-height: rem(14);
   font-weight: 600;
   font-size: rem(16);
   line-height: rem(22);
   color: $title-color;
   background-color: #ffffff;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 20;
 
@@ -20,21 +20,19 @@
     column-gap: rem(5);
     text-align: center;
     line-height: rem(32);
-    @include laptop() {
-      padding-left: 0;
-      padding-right: 0;
-      width: vw($container-width + 100);
-    }
-
     .logo {
       flex: 0 0 rem(148);
+      position: relative;
+      z-index: 5;
       &__img {
         min-width: 100%;
       }
     }
+
     .menu {
       flex: 1 1 auto;
       text-transform: uppercase;
+      position: relative;
 
       &__list {
         display: flex;
@@ -46,29 +44,18 @@
         @include main-shape(15, 2);
         padding: 0 15px;
         transition: all 0.3s;
-        &:hover {
-          border-color: $btn-main-color;
-          .menu__link {
-            color: $btn-main-color;
-          }
-        }
-      }
-      &__link {
-        color: inherit;
-      }
-    }
-    .auth {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
 
-      &__item {
+        &.auth {
         min-width: rem(95);
-        height: rem(32);
+        min-height: rem(32);
+        padding: rem(3) rem(5);
         @include main-shape(15, 2);
         background-color: $btn-color;
         text-transform: capitalize;
         transition: all 0.3s;
+        .auth__link {
+          color: #ffffff;
+        }
         &:hover {
           border-color: $decor-color;
           background-color: #ffffff;
@@ -76,28 +63,143 @@
             color: $decor-color;
           }
         }
+
+        }
+        &:hover {
+          border-color: $btn-main-color;
+          .menu__link {
+            color: $btn-main-color;
+          }
+         
+        }
       }
       &__link {
-        color: #ffffff;
+        color: inherit;
+      }
+    }
+    
+  }
+  @include laptop() {
+    padding-left: 0;
+    padding-right: 0;
+    &__container {
+      width: vw($container-width + 100);
+    }
+  }
+  @include tablet() {
+    .menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color:rgba(137, 252, 219, 0.8);
+      overflow: auto;
+      transform: all 0.4s ease;
+      &__list {
+        padding-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content:space-evenly;
+        column-gap: vw(5);
+        font-size: 1.7rem;
+        font-weight: 700;
+        height: 100%;
+        .auth{
+          order:  -1;
+        }
+      }
+      &.active {
+        left: 0;
+      }
+    }
+
+    .burger-icon {
+      margin-left: auto;
+      width: rem(40);
+      height: rem(30);
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.1);
+        span,
+        &::before,
+        &::after {
+          background-color: $title-color;
+        }
+      }
+
+      & span,
+      &::before,
+      &::after {
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 10%;
+        background-color: $main-text-color;
+      }
+      & span {
+        top: 45%;
+      }
+      &::before,
+      &::after {
+        content: "";
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+
+      &.active span {
+        transform: scale(0);
+      }
+      &.active::before {
+        top: 50%;
+        transform: rotate(45deg) translate(-3px, -50%);
+      }
+      &.active::after {
+        bottom: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+      }
+      &.active span,
+      &.active::before,
+      &.active::after{
+        background-color: $main-text-color;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
-  
+
   .progress {
     width: 100%;
     height: 1rem;
-    margin-bottom: 0.5rem;
+
     &__container {
       @include main-container();
       margin: 0 auto;
+      padding: 0 vw(134);
       height: 0.5em;
     }
     &__rate {
       width: 0%;
       height: 100%;
-      @include main-shape(20,2);
-      background: rgb(120,233,195);
-      background: linear-gradient(90deg, rgba(120,233,195,0.6) 2%, rgba(0,190,129,0.6) 38%, rgba(68,154,129,0.6) 65%, rgba(52,108,67,0.6) 100%);
+      @include main-shape(20, 2);
+      background: rgb(120, 233, 195);
+      background: linear-gradient(
+        90deg,
+        rgba(120, 233, 195, 0.6) 2%,
+        rgba(0, 190, 129, 0.6) 38%,
+        rgba(68, 154, 129, 0.6) 65%,
+        rgba(52, 108, 67, 0.6) 100%
+      );
     }
   }
 }
