@@ -1,24 +1,25 @@
-@import '_fonts', '_variables', '_functions';
-@import '_reset';
+@import "_fonts", "_variables", "_functions";
+@import "_reset";
 
+.page {
+  @extend %main-text-style;
+  font-weight: 400;
+  font-size: rem(18);
+  line-height: rem(28);
+  box-sizing: border-box;
+  user-select: none;
+  .hidden {
+    visibility: hidden;
+  }
+  @import "loader";
 
-.page{
-    @extend %main-text-style;
-    font-weight: 400;
-    font-size: rem(18);
-    line-height: rem(28);
-    box-sizing: border-box;
-    user-select: none;
-    .hidden {
-      visibility: hidden;
-    }
-      
-     .wrapper {
-        min-height: 100vh;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        @import 'header', 'main', 'footer';
-      }
+  .wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    @import "header","main", "footer";
+  }
 
+  
 }
