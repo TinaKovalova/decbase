@@ -541,6 +541,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      min-width: 0;
     }
     &__subtitle {
       text-transform: uppercase;
@@ -588,8 +589,7 @@
       margin: 0 auto;
       height: rem(460);
       position: relative;
-      display: flex;
-      justify-content: center;
+     
       .swiper-button-prev,
       .swiper-button-next {
         position: absolute;
@@ -606,6 +606,7 @@
 
     .swiper-slide {
       padding-left: 90px;
+      
     }
 
     &__item {

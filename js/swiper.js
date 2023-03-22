@@ -1,5 +1,8 @@
- const swiper = new Swiper(".swiper", {
-    grabCursor:true,
+new Swiper(".swiper", {
+    slidesPerView: 2,
+    slidesPerGroup:2,
+    watchOverflow: true,
+    slideToClickedSlide:true,
     loop:true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -8,12 +11,10 @@
     breakpoints:{
       0: {
         slidesPerView: 1,
-        slidesPerGroup:2,
         centeredSlides:true
       },
       1439: {
         slidesPerView: 2,
-        slidesPerGroup:2,
       }
     }
   });

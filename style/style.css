@@ -1991,6 +1991,7 @@ progress {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 0;
 }
 .page .wrapper .main .testimonials__subtitle {
   text-transform: uppercase;
@@ -2039,12 +2040,6 @@ progress {
   margin: 0 auto;
   height: 28.75rem;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .page .wrapper .main .testimonials .swiper .swiper-button-prev,
 .page .wrapper .main .testimonials .swiper .swiper-button-next {

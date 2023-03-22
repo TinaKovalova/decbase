@@ -50,11 +50,10 @@ getUsers()
   })
   .then((posts)=>{
     Array.from(sliderItems).forEach((item, index)=>{
-      let{userName, position,body, userId}={...posts[index+1]}
+      let{userName, position,body}={...posts[index+1]}
       item.querySelector('.testimonials__user-name').textContent=userName;
       item.querySelector('.testimonials__user-position').textContent=position;
       item.querySelector('.testimonials__text').textContent=body;
-      if(index> 1) item.classList.add('hidden')
     })
   }) 
 });
